@@ -107,6 +107,13 @@ header hr {
 
 /* ↓↓↓ content内 のスタイル ↓↓↓ */
 
+.all-contents {
+    margin: 30px 0px;
+    margin-right: auto;
+    margin-left: auto;
+    text-align: center;
+}
+
 .content {
     background: var(--content-background-color);
     border: 1px solid var(--content-border-color);
@@ -116,6 +123,8 @@ header hr {
     max-width: 1000px;
     padding: 20px 25px;
     width: 80%;
+
+    text-align: start;
 }
 
 .content h1, h2 {
@@ -124,6 +133,20 @@ header hr {
     border-color: var(--content-border-color);
 }
 
+.half-content {
+    background: var(--content-background-color);
+    border: 1px solid var(--content-border-color);
+    border-radius: 10px;
+
+    margin-top: 30px;
+    margin-bottom: 30px;
+
+    max-width: 475px;
+    padding: 20px 25px;
+    width: 80%;
+
+    display: inline-block;
+}
 
 /* ↓↓↓ footer内 のスタイル ↓↓↓ */
 
