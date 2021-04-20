@@ -1,0 +1,141 @@
+html {
+    --main-background-color: #eee;
+    --main-text-color: #222;
+
+    --header-hr-line-color: #ddd;
+  
+    --wrapper-masthead-color: #fff;
+    --wrapper-footer-color: #666;
+    --footer-text-color: #fff;
+    --eng-color: #888;
+
+    --content-background-color: #fff;
+    --content-border-color: #ddd;
+}
+  
+body {
+    background: var(--main-background-color);
+    color: var(--main-text-color);
+
+    font-family: Arial, Helvetica, sans-serif;
+    line-height: 1.7;
+    margin: 0;
+}
+
+/* ↓↓↓ header内 のスタイル ↓↓↓ */
+
+header {
+    background: var(--content-background-color);
+    border-bottom: 1px solid var(--content-border-color);
+    margin-top: 0;
+}
+
+.header-all-contents {
+    text-align: center;
+    padding: 10px 20px 0px 20px;
+}
+
+.header-content {
+    padding: 20px 20px;
+    display: inline-block;
+}
+
+.header-content-sub {
+    padding: 0px 5px;
+    display: inline-block;
+}
+
+.rits-image img { 
+    height: 50px;
+}
+
+.lab-image {
+    margin: 0 auto;
+}
+
+.lab-image{
+    white-space: nowrap;
+}
+
+.header-lab-name {
+    margin: 0 0 0 0;
+    font-size: 25px;
+}
+
+.header-lab-name a {
+    color: var(--main-text-color);
+    text-decoration: none;
+}
+
+.header-lab-name-eng {
+    margin: -5px 0 0 0;
+    font-size: 12px;
+}
+
+.header-lab-name-eng a {
+    text-decoration: none;
+    color: var(--eng-color);
+}
+
+header hr {
+    width: 80%;
+    max-width: 1000px;
+    border: 1px solid var(--header-hr-line-color);
+    border-radius: 2px;
+}
+
+/* header内　ナビゲーター */
+
+.navigate {
+    text-align: center;
+    list-style: none;
+    padding-inline-start: 0px;
+}
+
+.navigate li {
+    height: 50px;
+    line-height: 50px;
+    margin-right: 2px;
+    display: inline-block;
+}
+
+.navigate li a {
+    text-decoration: none;
+    color: var(--main-text-color);
+    padding: 20px;
+  }
+
+/* ↓↓↓ content内 のスタイル ↓↓↓ */
+
+.content {
+    background: var(--content-background-color);
+    border: 1px solid var(--content-border-color);
+    border-radius: 10px;
+
+    margin: 30px auto;
+    max-width: 1000px;
+    padding: 20px 25px;
+    width: 80%;
+}
+
+.content h1, h2 {
+    padding-bottom: .3em;
+    border-bottom: 1px solid;
+    border-color: var(--content-border-color);
+}
+
+
+/* ↓↓↓ footer内 のスタイル ↓↓↓ */
+
+footer {
+    background: var(--wrapper-footer-color);
+    color: var(--main-text-color);
+
+    padding: 20px 20px;
+}
+
+.copy-right {
+    color: var(--footer-text-color);
+    font-size: 90%;
+    text-align: center;
+}
