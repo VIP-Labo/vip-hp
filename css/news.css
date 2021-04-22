@@ -1,0 +1,41 @@
+/*--news.css
+news.html のデザイン用
+--*/
+html {
+    --vip-color: rgb(174, 0, 0); 
+    --calendar-tag-color: #a3a3a3;
+}
+
+/*--枠内のデザイン--*/
+
+ul {
+    padding-inline-start: 5px;
+}
+
+ul li {
+    line-height: 1.3;/*行間*/
+    padding: 0.5em 0 0.5em 0;
+    border-bottom: dashed 1px silver;
+    list-style-type: none!important;
+    font-size: 75%;/*フォントサイズ*/
+}
+
+  
+ul li:last-of-type {
+    border-bottom: none;
+}
+
+/*スクロールバー　非表示*/
+/*
+::-webkit-scrollbar {
+    display: none;
+    -webkit-appearance: none;
+}
+*/
+
+.calendar-font {
+    color: var(--calendar-tag-color);
+    font-weight: 500;
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    margin-bottom: 10px;
+}
