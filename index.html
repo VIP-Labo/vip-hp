@@ -33,6 +33,20 @@
     </script>
     -->
 
+    <!-- スライドショー用script -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.min.js"></script>
+
+    <script type="text/javascript">
+            $(document).ready(function(){
+                $('.slider').bxSlider({
+                    auto: true,
+                    pause: 4000,
+                });
+            });
+    </script>
+
 </head>
 
 <body>
@@ -76,16 +90,27 @@
     <div class="all-contents">
         <div class="content">
             <h2 style="text-align: center;">
-                視覚情報処理研究室について
+                視覚情報処理研究室 HP
             </h2>
-            <p>
-                　視覚情報処理研究室（VIP）では、画像・映像認識とディープラーニングを扱った研究に取り組んでいます。 この研究室は昨年、名古屋大学からいらっしゃった加藤ジェーン先生が立ち上げました。立命館大学の研究室としては歴史が浅いですが、名古屋大学の先輩方が残した研究は面白い内容も多く、歴史も功績もあります。 具体的な研究内容は、歩行者検出、運転の推定、映像の暴力度レーティング、映像要約、蝶の詳細認識、人物行動認識などです。
-                <br>
-                <br>
-                　研究室の雰囲気は、各々が主体的な人が多く、和やかです。 皆で作り上げていこうという気持ちも強く、留学生の方も多いためグローバルな研究室です。
-            </p>
+            <div class="slider">
+                <img src="image/slideshow/syugou.jpg" width="100%" height="100%" alt="">
+                <img src="image/slideshow/cup.JPG" width="100%" height="100%" alt="">
+                <img src="image/slideshow/cool.JPG" width="100%" height="100%" alt="">
+            </div>
         </div>
  
+        <div class="half-content">
+            <div class="content">
+                <h2 style="text-align: center;">INTRODUCTION</h2>
+                <p style="text-align: start;">
+                    　視覚情報処理研究室（VIP）は、名古屋大学からいらっしゃった加藤ジェーン先生が立ち上げ、画像・映像認識、ディープラーニングを扱った研究に従事しています。研究内容としては、歩行者検出、運転の推定、映像の暴力度レーティング、行動認識、群衆カウントなど様々なタスクに取り組んでいます。
+                    <br>
+                    <br>
+                    　研究室の雰囲気は、各々が主体的な人が多く和やかです。皆で作り上げていこうという気持ちも強く、留学生の方も多いためグローバルな研究室となっています。
+                </p>
+            </div>
+        </div>
+
         <div class="half-content">
             <div class="content">
                 <h2 style="text-align: center;">NEWS</h2>
@@ -96,17 +121,6 @@
                     </iframe>
                     <!--　▲新着情報ここまで　 -->
                 </div>
-            </div>
-        </div>
-
-        <div class="half-content">
-            <div class="content">
-                <h2 style="text-align: center;">INTRODUCTION</h2>
-                <p style="text-align: start;">
-                    　視覚情報処理研究室（VIP）は、名古屋大学からいらっしゃった加藤ジェーン先生が立ち上げ、画像・映像認識、ディープラーニングを扱った研究に従事しています。研究内容としては、歩行者検出、運転の推定、映像の暴力度レーティング、行動認識、群衆カウントなど様々なタスクに取り組んでいます。
-                    <br>
-                    　研究室の雰囲気は、各々が主体的な人が多く和やかです。皆で作り上げていこうという気持ちも強く、留学生の方も多いためグローバルな研究室となっています。
-                </p>
             </div>
         </div>
 
