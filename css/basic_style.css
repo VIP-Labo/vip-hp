@@ -153,6 +153,15 @@ header {
     text-align: start;
 }
 
+.slider-content {
+    margin: 0px auto 30px auto;
+
+    max-width: 860px;
+    width: 90%;
+
+    text-align: start;
+}
+
 .half-content {
     max-width: 560px;
     display: inline-block;
