@@ -180,6 +180,34 @@ header {
     border-color: var(--content-border-color);
 }
 
+/* contact.htmlで使用しているスタイル */
+
+.contact-parent {
+    overflow-x:auto;
+    overflow-y:hidden;
+    width:100%;
+    white-space:nowrap;
+}
+
+.content-child {
+    display: inline-block;
+    vertical-align: middle;
+    white-space: nowrap;
+
+    margin: 15px;
+}
+
+.content table {
+    border-collapse: collapse;
+}
+
+.content th,td {
+    border: solid 2px; /* 枠線指定 */
+    border-color: var(--content-border-color);
+    padding: 10px 5px 10px 5px;
+}
+
+/* iPadのための幅指定 */
 
 @media only screen and (max-width: 940px) {
     .content {
