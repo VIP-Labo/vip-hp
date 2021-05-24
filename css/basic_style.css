@@ -17,7 +17,7 @@ html {
 }
   
 body {
-    background: var(--main-background-color);
+    background: white;
     color: var(--main-text-color);
 
     font-family: Arial, Helvetica, sans-serif;
@@ -133,51 +133,33 @@ header {
 /* ↓↓↓ content内 のスタイル ↓↓↓ */
 
 .all-contents {
-    margin: 30px 0px;
-    margin-right: auto;
-    margin-left: auto;
+    width: 1000px;
+    margin: 30px auto;
+    display: flex;
+    flex-wrap: wrap;
+
+    display: -webkit-flex;
+}
+
+.left-column {
+    position: sticky;
+    top: 0;
+    width: 30%;
+}
+
+.right-column {
+    width: 70%;
+}
+
+.center-column {
+    width: 100%;
     text-align: center;
 }
 
-.content {
-    background: var(--content-background-color);
-    border: 1px solid var(--content-border-color);
-    border-radius: 12px;
-
-    margin: 0px auto 30px auto;
-
-    max-width: 860px;
-    padding: 20px 25px;
-    width: 80%;
-
-    text-align: start;
-}
-
-.slider-content {
-    margin: 0px auto 30px auto;
-
-    max-width: 860px;
-    width: 90%;
-
-    text-align: start;
-}
-
-.half-content {
-    max-width: 560px;
-    display: inline-block;
-    vertical-align: top;
-}
-
-.half-content .content {
-    min-height: 420px;
-    width: 80%;
-}
-
 .content h1, h2 {
-    margin-top: 10px;
     padding-bottom: .2em;
-    border-bottom: 1px solid;
-    border-color: var(--content-border-color);
+    border-bottom: 2px solid;
+    border-color: var(--vip-color);
 }
 
 /* contact.htmlで使用しているスタイル */
@@ -188,7 +170,7 @@ header {
     width:100%;
 }
 
-.content-child {
+.contact-child {
     display: inline-block;
     vertical-align: middle;
     white-space: nowrap;
@@ -196,15 +178,33 @@ header {
     margin: 15px;
 }
 
-.content table {
-    font-size: smaller;
+.contact-child table {
     border-collapse: collapse;
 }
 
-.content th,td {
+.contact-child th,td {
     border: solid 2px; /* 枠線指定 */
     border-color: var(--content-border-color);
-    padding: 10px 5px 10px 5px;
+    padding: 10px 10px 10px 10px;
+}
+
+/* member.html 内のスタイル */
+
+.member {
+    box-shadow: 1px 1px 6px rgb(50 50 50 / 35%);
+    padding: 0.9rem;
+    margin-bottom: 10px;
+}
+
+.member .name {
+    margin: 0 0 0 0;
+    font-size: large;
+}
+
+.member .name-eng {
+    margin: -5px 0 0 0;
+    font-size: 16px;
+    color: var(--eng-color);
 }
 
 /* iPadのための幅指定 */

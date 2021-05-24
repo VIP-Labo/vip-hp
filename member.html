@@ -33,21 +33,6 @@
     </script>
     -->
 
-    <!-- スライドショー用script -->
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.css">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.min.js"></script>
-
-    <script type="text/javascript">
-            $(document).ready(function(){
-                $('.bxslider').bxSlider({
-                    auto: true,
-                    pause: 4000,
-                    slideWidth: 860,
-                });
-            });
-    </script>
-
 </head>
 
 <body>
@@ -84,27 +69,56 @@
             <li><a href="publication.html">業績リスト</a></li>
             <li><a href="member.html">メンバー</a></li>
             <li><a href="contact.html">コンタクト</a></li>
-            <li><a href="/owncloud">内部ページ</a></li>
+            <li><a href="lab-member-page.html">内部ページ</a></li>
         </ul>
     </div>
 
     <!--メインコンテンツ部分-->
     <div class="all-contents">
 
-        <div class="content">
-            <h2>教授</h2>
-                <li>加藤　ジェーン</li>
+        <div class="left-column">
+            <li><a href="#prof">教授</a></li>
+            <li><a href="#assistant-prof">助教</a></li>
+            <li><a href="#dr">博士課程</a></li>
+            <li><a href="#ms">修士課程</a></li>
+            <li><a href="#b">学部生</a></li>
+        </div>
 
-            <h2>助教</h2>
-                <li>王　彧</li>
+        <div class="right-column">
+            <h2 id="prof">教授</h2>
+                <div class="member">
+                    <p class="name">加藤　ジェーン</p>
+                    <p class="name-eng">Jien KATO</p>
+                </div>
 
-            <h2>博士課程</h2>
-                <li>楊　一楠</li>
-                <li>趙　隆姣</li>
-                <li>劉　迪超</li>
-                <li>吉　頴</li>
+            <h2 id="assistant-prof">助教</h2>
+                <div class="member">
+                    <p class="name">王　彧</p>
+                    <p class="name-eng">Yu Wang</p>
+                </div>
 
-            <h2>修士課程</h2>
+            <h2 id="dr">博士課程</h2>
+                <div class="member">
+                    <p class="name">楊　一楠</p>
+                    <p class="name-eng"></p>
+                </div>
+
+                <div class="member">
+                    <p class="name">趙　隆姣</p>
+                    <p class="name-eng">Longjiao ZHAO</p>
+                </div>
+
+                <div class="member">
+                    <p class="name">劉　迪超</p>
+                    <p class="name-eng">Dichao LIU</p>
+                </div>
+
+                <div class="member">
+                    <p class="name">吉　頴</p>
+                    <p class="name-eng">Ying JI</p>
+                </div>
+
+            <h2 id="ms">修士課程</h2>
             <h3>M2</h3>
                 <li>内田　準也</li>
                 <li>杉山　瑠菜</li>
@@ -117,7 +131,7 @@
                 <li>林　慶憲</li>
                 <li>馬　玉菲</li>
 
-            <h2>学部生</h2>
+            <h2 id="b">学部生</h2>
 
         </div>
 
