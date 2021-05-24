@@ -175,7 +175,7 @@ header {
 
 .content h1, h2 {
     margin-top: 10px;
-    padding-bottom: .3em;
+    padding-bottom: .2em;
     border-bottom: 1px solid;
     border-color: var(--content-border-color);
 }
@@ -186,7 +186,6 @@ header {
     overflow-x:auto;
     overflow-y:hidden;
     width:100%;
-    white-space:nowrap;
 }
 
 .content-child {
@@ -198,6 +197,7 @@ header {
 }
 
 .content table {
+    font-size: smaller;
     border-collapse: collapse;
 }
 
