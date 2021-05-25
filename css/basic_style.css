@@ -217,6 +217,7 @@ header {
 
 .publication em{
     font-size: medium;
+    color: var(--calendar-tag-color);
 }
 
 /* member.html 内のスタイル */
@@ -228,6 +229,7 @@ header {
     padding: 0.4rem 0.9rem;
     margin-bottom: 10px;
     display: inline-block;
+    text-align: start;
 }
 
 .prof .name {
@@ -258,6 +260,7 @@ header {
     padding: 0.5rem 0.5rem;
     margin-bottom: 10px;
     display: inline-block;
+    text-align: start;
 }
 
 .member .name {
@@ -376,6 +379,19 @@ header {
     .right-column {
         width: 100%;
         margin: 0 auto;
+        text-align: center;
+    }
+
+    .right-column ul{
+        text-align: start;
+    }
+
+    .right-column li{
+        text-align: start;
+    }
+
+    .right-column h3, h4, p {
+        text-align: start;
     }
 }
 
