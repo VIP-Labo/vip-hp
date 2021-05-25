@@ -14,6 +14,7 @@ html {
     --content-border-color: #ddd;
 
     --vip-color: rgb(174, 0, 0); 
+    --calendar-tag-color: #a3a3a3;
 }
   
 body {
@@ -21,7 +22,6 @@ body {
     color: var(--main-text-color);
 
     font-family: Arial, Helvetica, sans-serif;
-    font-size: small;
     line-height: 1.7;
     margin: 0;
 }
@@ -133,7 +133,7 @@ header {
 /* ↓↓↓ content内 のスタイル ↓↓↓ */
 
 .all-contents {
-    max-width: 1100px;
+    max-width: 1280px;
     margin: 0px auto;
     flex-wrap: wrap;
     display: flex;
@@ -154,11 +154,11 @@ header {
     position: sticky;
     position: -webkit-sticky;
     top: 0;
-    width: 30%;
+    width: 25%;
 }
 
 .right-column {
-    width: 70%;
+    width: 75%;
 }
 
 .center-column {
@@ -170,6 +170,17 @@ header {
     padding-bottom: .2em;
     border-bottom: 2px solid;
     border-color: var(--vip-color);
+}
+
+.content h3 {
+    padding-bottom: .2em;
+    border-bottom: 1px solid;
+    border-color: var(--content-border-color);
+}
+
+.calendar-font {
+    color: var(--calendar-tag-color);
+    font-size: small;
 }
 
 /* contact.htmlで使用しているスタイル */
@@ -196,6 +207,16 @@ header {
     border: solid 2px; /* 枠線指定 */
     border-color: var(--content-border-color);
     padding: 10px 10px 10px 10px;
+}
+
+/* publication.html 内のスタイル */
+
+.publication ul li{
+    font-size: smaller;
+}
+
+.publication em{
+    font-size: medium;
 }
 
 /* member.html 内のスタイル */
@@ -231,10 +252,10 @@ header {
 }
 
 .member {
-    width: 230px;
+    width: 194px;
     margin: 0 10px;
     box-shadow: 1px 1px 6px rgb(50 50 50 / 35%);
-    padding: 0.4rem 0.9rem;
+    padding: 0.5rem 0.5rem;
     margin-bottom: 10px;
     display: inline-block;
 }
@@ -251,7 +272,7 @@ header {
 }
 
 .member .member-img {
-    margin-right: 20px;
+    margin-right: 10px;
     display: inline-block;
     position: relative;
     top: 5px; 
@@ -282,84 +303,33 @@ header {
 
 /* More ボタンで表示を増やす */
 
-@-webkit-keyframes slideDown {
-    0% {
-        opacity: 1;
-        -webkit-transform: translateY(-20px);
-        transform: translateY(-20px);
-    }
-    100% {
-        opacity: 1;
-        -webkit-transform: translateY(0);
-        transform: translateY(0);
-    }
-}
-@keyframes slideDown {
-    0% {
-        opacity: 1;
-        -webkit-transform: translateY(-20px);
-        transform: translateY(-20px);
-    }
-    100% {
-        opacity: 1;
-        -webkit-transform: translateY(0);
-        transform: translateY(0);
-    }
-}
-.slide-down {
-        -webkit-animation-name: slideDown;
-        animation-name: slideDown;
-}
-@-webkit-keyframes slideUp {
-    0% {
-        -webkit-transform: translateY(20px);
-        transform: translateY(20px);
-    }
-    100% {
-        -webkit-transform: translateY(0px);
-        transform: translateY(0px);
-    }
-}
-@keyframes slideUp {
-    0% {
-        -webkit-transform: translateY(20px);
-        transform: translateY(20px);
-    }
-    100% {
-        -webkit-transform: translateY(0px);
-        transform: translateY(0px);
-    }
-}
-.slide-up {
-    -webkit-animation-name: slideUp;
-    animation-name: slideUp;
-}
 .content-wrap {
-    height: 100%;
     overflow: hidden;
     position: relative;
     margin: 0;
+    font-size: smaller;
 }
+.content-wrap h4 {
+    margin-bottom: 5px;
+    font-size: medium;
+}
+.content-wrap p {
+    margin-top: 0;
+    padding-left: 10px;
+}
+
 .close-btn, .more-btn {
     display: block;
 }
 .close-btn {
     background: none;
 }
-.slide-up {
-    height: 67px;
-    padding-bottom: 0;
-    overflow: hidden;
+.invisible {
+    display: none;
 }
-.slide-down {
-    height: auto;
-    overflow: visible;
-    padding-bottom: 50px;
+.visible {
+    display: block;
 }
-.close-btn {
-    padding:0;
-}
-
 /* Morボタン ここまで */
 
 .iframe-border {
@@ -369,6 +339,30 @@ header {
     margin-bottom: 10px;
     display: inline-block;
     border: none;
+}
+
+/* lab-member-page.htmlで使用しているスタイル */
+
+.cloud {
+    margin: 0 10px;
+    box-shadow: 1px 1px 6px rgb(50 50 50 / 35%);
+    padding: 0.4rem 0.9rem;
+    margin-bottom: 10px;
+    display: inline-block;
+
+    background-image: url(../image/cloud/background.jpg);
+    background-position: center;
+    text-align: center;
+}
+
+.cloud-logo {
+    display: block;
+    margin: 10px auto;
+}
+
+.box-white{
+    background-color: rgba(0, 0, 0, 0.15);
+    color: white;
 }
 
 /* モバイルのための幅指定 */
