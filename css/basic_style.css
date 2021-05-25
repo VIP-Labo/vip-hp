@@ -133,12 +133,17 @@ header {
 /* ↓↓↓ content内 のスタイル ↓↓↓ */
 
 .all-contents {
-    width: 1000px;
+    max-width: 1100px;
     margin: 30px auto;
     display: flex;
     flex-wrap: wrap;
 
     display: -webkit-flex;
+}
+
+.content {
+    margin: 0 auto;
+    width: 80%;
 }
 
 .left-column {
@@ -173,12 +178,12 @@ header {
 .contact-child {
     display: inline-block;
     vertical-align: middle;
-    white-space: nowrap;
-
+    
     margin: 15px;
 }
 
 .contact-child table {
+    width: 100%;
     border-collapse: collapse;
 }
 
@@ -191,9 +196,12 @@ header {
 /* member.html 内のスタイル */
 
 .member {
+    width: 36%;
+    margin: 0 10px;
     box-shadow: 1px 1px 6px rgb(50 50 50 / 35%);
     padding: 0.9rem;
     margin-bottom: 10px;
+    display: inline-block;
 }
 
 .member .name {
@@ -207,33 +215,10 @@ header {
     color: var(--eng-color);
 }
 
-/* iPadのための幅指定 */
+/* モバイルのための幅指定 */
 
-@media only screen and (max-width: 940px) {
-    .content {
-        background: var(--content-background-color);
-        border: 1px solid var(--content-border-color);
-        border-radius: 12px;
+@media only screen and (max-width: 600px) {
     
-        margin: 0px auto 30px auto;
-    
-        max-width: 800px;
-        padding: 20px 25px;
-        width: 80%;
-    
-        text-align: start;
-    }
-    
-    .half-content {
-        max-width: 400px;
-        display: inline-block;
-        vertical-align: top;
-    }
-
-    .half-content .content {
-        min-height: 420px;
-        width: 80%;
-    }
 
 }
 
