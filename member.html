@@ -33,6 +33,22 @@
     </script>
     -->
 
+    <!-- jQuery 使用 -->
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+    <script type="text/javascript">
+        $(function() {
+            $('.more-btn').on('click', function() {
+                if( $(this).children().is('.open') ) {
+                    $(this).html('<button class="btn close">Close</button>').addClass('close-btn');
+                    $(this).parent().removeClass('slide-up').addClass('slide-down');
+                } else {
+                    $(this).html('<button class="btn open">More</button>').removeClass('close-btn');
+                    $(this).parent().removeClass('slide-down').addClass('slide-up');
+                }
+            });
+        });
+    </script>
+
 </head>
 
 <body>
@@ -84,40 +100,58 @@
                 <li><a href="#dr">博士課程</a></li>
                 <li><a href="#ms">修士課程</a></li>
                 <li><a href="#b">学部生</a></li>
+                <li><a href="#g">卒業生</a></li>
             </div>
         </div>
 
         <div class="right-column">
             <div class="content">
                 <h2 id="prof">教授</h2>
-                    <div class="member">
 
-                        <div class="member-info-block">
+                    <div class="prof">
+                        <div class="prof-info-block">
                             <p class="name">加藤　ジェーン</p>
                             <p class="name-eng">KATO Jien</p>
                         </div>
 
                         <div class="member-btn-block">
-                            <p>
-                                <a href="http://www.ritsumei.ac.jp/~jien/"><button class="btn">More</button></a>
-                            </p>
+                            <a href="http://www.ritsumei.ac.jp/~jien/" style="text-decoration: none;">
+                                <button class="btn">More</button>     
+                            </a>
                         </div>
-                        
                     </div>
 
                 <h2 id="assistant-prof">助教授</h2>
-                    <div class="member">
-                        <div class="member-info-block">
+                    <div class="prof">
+                        <div class="prof-info-block">
                             <p class="name">王　彧</p>
                             <p class="name-eng">WANG Yu</p>
                         </div>
 
-                        <div class="member-btn-block">
-                            <p>
-                                <button class="btn">More</button>
-                            </p>
+                        <div class="member-btn-block more-btn">
+                            <button class="btn open">More</button>
                         </div>
 
+                        <div class="content-wrap">
+                            <!-- Modal Structure -->
+                            <div class="content-txt">
+                                <h4>学歴</h4>
+                                <p>
+                                    2013.03　名古屋大学大学院情報科学研究科 社会システム情報学専攻 博士後期課程　博士（工学）<br>
+                                    2010.03　名古屋大学大学院情報科学研究科 社会システム情報学専攻 博士後期課程　修士（情報科学
+                                </p>
+                                <h4>職歴</h4>
+                                <p>
+                                    2017.04-現在　 　名古屋大学大学院国際開発研究科 助教<br>
+                                    2016.04-2017.03　名古屋大学大学院情報科学研究科 特任助教<br>
+                                    2014.04-2016.03　日本学術振興会(JSPS) 外国人特別研究員<br>
+                                    2013.04-2014.03　日本学術振興会(JSPS) 特別研究員PD<br>
+                                    2012.04-2013.03　日本学術振興会(JSPS) 特別研究員DC2<br>
+                                    2005.12-2007.06　Compal Electronics, Oversea Research Center, R&D Engineer<br>
+                                </p>
+                                <img src="image/profile_img/yu.jpg" width="130" height="140">
+                            </div>
+                        </div>
                     </div>
 
                 <h2 id="dr">博士課程</h2>
@@ -272,6 +306,28 @@
                 <h3>B4</h3>
                     <div class="member">
                         <div class="member-img">
+                            <img src="image/profile_img/2019/okamoto_koshiro.png">
+                        </div>
+
+                        <div class="member-info-block">
+                            <p class="name">岡本　幸志郎</p>
+                            <p class="name-eng">OKAMOTO Koshiro</p>
+                        </div>
+                    </div>
+
+                    <div class="member">
+                        <div class="member-img">
+                            <img src="image/profile_img/2019/hiroki_yoshioka.jpg">
+                        </div>
+
+                        <div class="member-info-block">
+                            <p class="name">吉岡　宏樹</p>
+                            <p class="name-eng">YOSHIOKA Hiroki</p>
+                        </div>
+                    </div>
+
+                    <div class="member">
+                        <div class="member-img">
                             <img src="image/profile_img/2019/YU_JINHONG.png">
                         </div>
 
@@ -412,6 +468,11 @@
                             <p class="name-eng">MOU Seki</p>
                         </div>
                     </div>
+
+                <h2 id="#g">卒業生</h2>
+                <iframe src="graduate.html" class="iframe-border" width="100%" height="300px" scrolling="auto">
+                    インラインフレーム対応ブラウザでご覧いただけます。
+                </iframe>
 
             </div>
         </div>

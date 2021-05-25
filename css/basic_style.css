@@ -200,11 +200,41 @@ header {
 
 /* member.html 内のスタイル */
 
+.prof {
+    width: 90%;
+    margin: 0 10px;
+    box-shadow: 1px 1px 6px rgb(50 50 50 / 35%);
+    padding: 0.4rem 0.9rem;
+    margin-bottom: 10px;
+    display: inline-block;
+}
+
+.prof .name {
+    margin: 0 0 0 0;
+    font-size: medium;
+}
+
+.prof .name-eng {
+    margin: -5px 0 0 0;
+    font-size: 12px;
+    color: var(--eng-color);
+}
+
+.prof .prof-info-block {
+    display: inline-block;
+}
+
+.prof .member-btn-block {
+    float: right;
+    display: inline-block;
+    height: 32px;
+}
+
 .member {
     width: 230px;
     margin: 0 10px;
     box-shadow: 1px 1px 6px rgb(50 50 50 / 35%);
-    padding: 0.9rem;
+    padding: 0.4rem 0.9rem;
     margin-bottom: 10px;
     display: inline-block;
 }
@@ -236,25 +266,109 @@ header {
 
 .member .member-info-block {
     position: relative;
-    top: -5px;
+    top: -8px;
     display: inline-block;
-}
-
-.member .member-btn-block {
-    float: right;
-    display: inline-block;
-    position: relative;
-    top: -10px;
-    height: 32px;
 }
 
 .btn {
+    margin: 8px 0; 
     cursor: pointer;
     padding: 8px;
     color:#ffffff;
     background-color: var(--vip-color);
     border: none;
     border-radius: 4px;
+}
+
+/* More ボタンで表示を増やす */
+
+@-webkit-keyframes slideDown {
+    0% {
+        opacity: 1;
+        -webkit-transform: translateY(-20px);
+        transform: translateY(-20px);
+    }
+    100% {
+        opacity: 1;
+        -webkit-transform: translateY(0);
+        transform: translateY(0);
+    }
+}
+@keyframes slideDown {
+    0% {
+        opacity: 1;
+        -webkit-transform: translateY(-20px);
+        transform: translateY(-20px);
+    }
+    100% {
+        opacity: 1;
+        -webkit-transform: translateY(0);
+        transform: translateY(0);
+    }
+}
+.slide-down {
+        -webkit-animation-name: slideDown;
+        animation-name: slideDown;
+}
+@-webkit-keyframes slideUp {
+    0% {
+        -webkit-transform: translateY(20px);
+        transform: translateY(20px);
+    }
+    100% {
+        -webkit-transform: translateY(0px);
+        transform: translateY(0px);
+    }
+}
+@keyframes slideUp {
+    0% {
+        -webkit-transform: translateY(20px);
+        transform: translateY(20px);
+    }
+    100% {
+        -webkit-transform: translateY(0px);
+        transform: translateY(0px);
+    }
+}
+.slide-up {
+    -webkit-animation-name: slideUp;
+    animation-name: slideUp;
+}
+.content-wrap {
+    height: 100%;
+    overflow: hidden;
+    position: relative;
+    margin: 0;
+}
+.close-btn, .more-btn {
+    display: block;
+}
+.close-btn {
+    background: none;
+}
+.slide-up {
+    height: 67px;
+    padding-bottom: 0;
+    overflow: hidden;
+}
+.slide-down {
+    height: auto;
+    overflow: visible;
+    padding-bottom: 50px;
+}
+.close-btn {
+    padding:0;
+}
+
+/* Morボタン ここまで */
+
+.iframe-border {
+    width: 95%;
+    margin: 0 10px;
+    box-shadow: 1px 1px 6px rgb(50 50 50 / 35%);
+    margin-bottom: 10px;
+    display: inline-block;
+    border: none;
 }
 
 /* モバイルのための幅指定 */
