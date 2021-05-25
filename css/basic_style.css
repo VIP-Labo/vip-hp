@@ -107,7 +107,7 @@ header {
     
     display: inline-flex;
 
-    font-size: 14px;
+    font-size: small;
 
     border-right: 1px solid #666;
     border-left: 1px solid #333;
@@ -252,7 +252,7 @@ header {
 }
 
 .member {
-    width: 194px;
+    width: 200px;
     margin: 0 10px;
     box-shadow: 1px 1px 6px rgb(50 50 50 / 35%);
     padding: 0.5rem 0.5rem;
