@@ -284,6 +284,10 @@ header {
     box-shadow: 1px 1px 6px rgb(50 50 50 / 35%);
     padding: 0.4rem 0.9rem;
     margin-bottom: 10px;
+
+    -webkit-transition: box-shadow .2s linear;
+    transition: box-shadow .2s linear;
+
     display: inline-block;
     text-align: start;
 }
@@ -315,6 +319,10 @@ header {
     box-shadow: 1px 1px 6px rgb(50 50 50 / 35%);
     padding: 0.5rem 0.5rem;
     margin-bottom: 10px;
+
+    -webkit-transition: box-shadow .2s linear;
+    transition: box-shadow .2s linear;
+
     display: inline-block;
     text-align: start;
 }
