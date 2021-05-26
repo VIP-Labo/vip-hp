@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <meta name="keywords" content="視覚情報処理研究室,,画像処理,画像認識,Visual Information Processing Laboratory,image processing,image recognition">
+    <meta name="description" content="立命館大学　情報理工学部　画像・音メディアコース　視覚情報処理研究室のホームページです。">  <!---タブの箇所--->
+    <title>視覚情報処理研究室 - Visual Information Processing Laboratory -</title>
+
+    <!--ホームページのタブ画像(favicon/touch-icon) icon-->
+    <link rel="shortcut icon" href="../image/logo/favicon.ico">
+    <link rel="apple-touch-icon" href="../image/logo/icon-16x16.png">
+
+    <!-- Import Google Icon Font -->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link href="https://use.fontawesome.com/releases/v5.6.1/css/all.css" rel="stylesheet">
+
+    <!--Let browser know website is optimized for mobile-->
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <!--link rel="stylesheet" href=""-->
+    <link rel="stylesheet" type="text/css" href="../css/basic_style.css" />
+
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+
+    <!--
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-142072183-1"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+
+        gtag('config', 'UA-142072183-1');
+    </script>
+    -->
+
+</head>
+
+<body>
+
+    <!--ヘッダー部分-->
+    <header>
+        <div class="header-all-contents">
+            <div class="header-content">
+                <a href="http://www.ritsumei.ac.jp/" class="rits-image">
+                    <img src="../image/rits.svg">
+                </a>
+            </div>
+
+            <div class="header-content">
+                <div class="header-content-sub">
+                    <a href="../index.html" class="lab-image">
+                        <img src="../image/vip.svg">
+                    </a>
+                </div>
+
+                <div class="header-content-sub">
+                    <p class="header-lab-name"><a href="../index.html">視覚情報処理研究室</a></p>
+                    <p class="header-lab-name-eng"><a href="../index.html">Visual Information Processing Laboratory</a></p>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!--ナビゲーションバー部分-->
+    <div>
+        <ul class="navigate">
+            <li><a href="../index.html">ホーム</a></li>
+            <li><a href="../research.html">研究紹介</a></li>
+            <li><a href="../publication.html">業績リスト</a></li>
+            <li><a href="../member.html">メンバー</a></li>
+            <li><a href="../lab-member-page.html">内部ページ</a></li>
+            <li><a href="../contact.html">連絡先</a></li>
+        </ul>
+    </div>
+
+    <!--メインコンテンツ部分-->
+    <div class="all-contents">
+
+        <div class="left-column">
+            <div class="content">
+
+                <h2>もくじ</h2>
+                <li><a href="#abs">概要</a></li>
+                <li><a href="#bg">背景</a></li>
+                <li><a href="#ref">参考文献</a></li>
+
+                <a class="research-link" href="../research.html">
+                    <i style="margin: 20px 0px;" class="fas fa-arrow-circle-left">　研究一覧へ戻る</i>
+                </a>
+                
+            </div>
+        </div>
+
+        <div class="right-column" >
+            <div class="content">
+                <h2>監視カメラ映像からの幼稚園児の 1 日ダイジェスト自動生成</h2>
+                <h3 id="abs" style="margin-bottom: 0;">概要</h3>
+                <p style="text-align: start;">
+                    　この研究では幼稚園の日常生活を記録した幼稚園児の1日ダイジェストを自動で生成するシステムの実現に取り組んでいます。主なアプローチとしてはまず8台のカメラと8代の無線タグレシーバーの組み合わせを1セットとして園児が頻繁に行く場所に設置します。これをすることで各園児の位置情報が取得でき、対象園児の映る映像のみを取り出すことができます。次に録画された映像を「食事」「遊び」「睡眠」「集団行動」の4つのイベントに分けます。イベントを識別するときは短くても数分連続して起こる事を考慮して「1分間」と単位時間とします。
+                </p>
+                <h3 id="bg" style="margin-bottom: 0;">背景</h3>
+                <p style="text-align: start;">
+                    　幼稚園は家庭とは異なる環境のため子供の様子を知りたい保護者がたくさんいます。そのためいくつかの幼稚園は遠隔監視カメラネットワークシステムを使って子供の映像を録画しています。しかし複数のカメラで記録された映像は,1日延べ数十時間もあるため見たい映像を手作業で探さないといけません。そこで、この研究では幼稚園の記録映像から園児の1日のダイジェスト映像を生成するシステムを実現する研究をしています。
+                </p>
+
+                <div class="study-img">
+                    <img src="../image/study/video_summary.png">
+                </div>
+
+                <h3 id="ref" style="margin-bottom: 0;">参考文献</h3>
+                <ul>
+                    <li>石川 友哉, 王 彧, 加藤 ジェーン：幼稚園生活を記録した映像の要約画像ラボ, G11 05 04,2011</li>
+                    <li>石川 友哉, 王 彧, 加藤 ジェーン：監視カメラ映像からの幼稚園児の1日ダイジェスト生成 電子情報通信学会 パターン認識 PRMU</li>
+                </ul>
+                
+                <div class="return">
+                    <a class="research-link" href="../research.html">
+                        <i style="margin: 20px 0px;" class="fas fa-arrow-circle-left">　研究一覧へ戻る</i>
+                    </a>
+                </div>
+                
+            </div>
+        </div>
+
+    </div>
+
+    <!--フッター部分-->
+    <footer>
+        <div class="copy-right">
+            Copyright © 2021 視覚情報処理研究室, All rights reserved.
+        </div>
+    </footer>
+
+</body>

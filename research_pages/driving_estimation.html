@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <meta name="keywords" content="視覚情報処理研究室,,画像処理,画像認識,Visual Information Processing Laboratory,image processing,image recognition">
+    <meta name="description" content="立命館大学　情報理工学部　画像・音メディアコース　視覚情報処理研究室のホームページです。">  <!---タブの箇所--->
+    <title>視覚情報処理研究室 - Visual Information Processing Laboratory -</title>
+
+    <!--ホームページのタブ画像(favicon/touch-icon) icon-->
+    <link rel="shortcut icon" href="../image/logo/favicon.ico">
+    <link rel="apple-touch-icon" href="../image/logo/icon-16x16.png">
+
+    <!-- Import Google Icon Font -->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link href="https://use.fontawesome.com/releases/v5.6.1/css/all.css" rel="stylesheet">
+
+    <!--Let browser know website is optimized for mobile-->
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <!--link rel="stylesheet" href=""-->
+    <link rel="stylesheet" type="text/css" href="../css/basic_style.css" />
+
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+
+    <!--
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-142072183-1"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+
+        gtag('config', 'UA-142072183-1');
+    </script>
+    -->
+
+</head>
+
+<body>
+
+    <!--ヘッダー部分-->
+    <header>
+        <div class="header-all-contents">
+            <div class="header-content">
+                <a href="http://www.ritsumei.ac.jp/" class="rits-image">
+                    <img src="../image/rits.svg">
+                </a>
+            </div>
+
+            <div class="header-content">
+                <div class="header-content-sub">
+                    <a href="../index.html" class="lab-image">
+                        <img src="../image/vip.svg">
+                    </a>
+                </div>
+
+                <div class="header-content-sub">
+                    <p class="header-lab-name"><a href="../index.html">視覚情報処理研究室</a></p>
+                    <p class="header-lab-name-eng"><a href="../index.html">Visual Information Processing Laboratory</a></p>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!--ナビゲーションバー部分-->
+    <div>
+        <ul class="navigate">
+            <li><a href="../index.html">ホーム</a></li>
+            <li><a href="../research.html">研究紹介</a></li>
+            <li><a href="../publication.html">業績リスト</a></li>
+            <li><a href="../member.html">メンバー</a></li>
+            <li><a href="../lab-member-page.html">内部ページ</a></li>
+            <li><a href="../contact.html">連絡先</a></li>
+        </ul>
+    </div>
+
+    <!--メインコンテンツ部分-->
+    <div class="all-contents">
+
+        <div class="left-column">
+            <div class="content">
+
+                <h2>もくじ</h2>
+ 
+                <li><a href="#abs1">概要</a></li>
+                <li><a href="#bg1">背景</a></li>
+                <li><a href="#ref1">参考文献</a></li>
+
+                <a class="research-link" href="../research.html">
+                    <i style="margin: 20px 0px;" class="fas fa-arrow-circle-left">　研究一覧へ戻る</i>
+                </a>
+                
+            </div>
+        </div>
+
+        <div class="right-column" >
+            <div class="content">
+                <h2>車載カメラ及び単一ビュー深度を用いた運転操作推定</h2>
+                <h3 id="abs1" style="margin-bottom: 0;">概要</h3>
+                <p style="text-align: start;">
+                    　本研究では、公開されている単一ビューの車載カメラ画像データセットの中から運転操作データセットを用いて、単一ビュー画像から深さマップに変換する方法を研究して、優秀な方法を見つけます。CNN (Convolutional Neural Network)を利用し、 単一ビュー画像から深さマップに変換する方法を研究して、既存の研究よりいい高精度運転操作推定システムの構築に取り組みます。また、関連する研究のモデルを探し、最適なディープラーニングモデルを作る予定です。最終的には深さマップと前述の単一ビュー画像を組み合わせて、モデルに入力し、トレーニングを行うことで、車載カメラから単一ビュー画像を用いて既存の研究よりいい高精度運転操作推定システムを完成させます。
+                </p>
+                <h3 id="bg1" style="margin-bottom: 0;">背景</h3>
+                <p style="text-align: start;">
+                    　近年、自動車の普及するとともに、交通事故の可能性が増加しています。それに伴い、精度の良い自動運転技術による自動運転支援の需要が高まっています。しかし、既存の運転操作推定システムは「車載カメラ」に加え「LIDAR 3Dポイントマップからのデータセット」を使用しているため、車載カメラだけよりもライダー機器を用いた場合、コストや故障のリスクが高く、処理時間が掛かってしまいます。そこで本研究では単一の車載カメラのみで運転操作推定に取り組んでいます。
+                </p>
+
+                <div class="study-img">
+                    <img src="../image/study/driving.png">
+                </div>
+
+                <h3 id="ref1" style="margin-bottom: 0;">参考文献</h3>
+                <ul>
+                    <li>Chen Y, Wang J, Li J, et al. Lidar-video driving dataset: Learning driving policies effectively[C]//Proceedings of the IEEE Conference on Computer Vision and Pattern Recognition. 2018: 5870-5878.</li>
+                    <li>Godard C, Mac Aodha O, Brostow G J. Unsupervised monocular depth estimation with left-right consistency[C]//Proceedings of the IEEE Conference on Computer Vision and Pattern Recognition. 2017: 270-279</li>
+                </ul>
+                
+                <div class="return">
+                    <a class="research-link" href="../research.html">
+                        <i style="margin: 20px 0px;" class="fas fa-arrow-circle-left">　研究一覧へ戻る</i>
+                    </a>
+                </div>
+                
+            </div>
+        </div>
+
+    </div>
+
+    <!--フッター部分-->
+    <footer>
+        <div class="copy-right">
+            Copyright © 2021 視覚情報処理研究室, All rights reserved.
+        </div>
+    </footer>
+
+</body>
