@@ -219,14 +219,20 @@ header {
 }
 
 .research-box .right-caption {
-    padding: 0.5rem;
+    padding: 0.3rem;
     width: 60%;
     height: 100%;
 }
 
 .right-caption h2 {
     text-align: center;
-    margin-top: 0px;
+    padding: 0px;
+    margin: 0px;
+}
+
+.right-caption p {
+    text-align: center;
+    margin: 5px 0px 0px 0px;
 }
 
 .study-img {
