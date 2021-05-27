@@ -33,21 +33,6 @@
     </script>
     -->
 
-    <!-- スライドショー用script -->
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.css">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.min.js"></script>
-
-    <script type="text/javascript">
-            $(document).ready(function(){
-                $('.bxslider').bxSlider({
-                    auto: true,
-                    pause: 4000,
-                    slideWidth: 860,
-                });
-            });
-    </script>
-
 </head>
 
 <body>
@@ -56,7 +41,7 @@
     <header>
         <div class="header-all-contents">
             <div class="header-content">
-                <a href="http://www.ritsumei.ac.jp/" class="rits-image">
+                <a href="http://www.ritsumei.ac.jp/" class="rits-image" target="_blank" rel="noopener noreferrer">
                     <img src="image/rits.svg">
                 </a>
             </div>
@@ -83,14 +68,180 @@
             <li><a href="research.html">研究紹介</a></li>
             <li><a href="publication.html">業績リスト</a></li>
             <li><a href="member.html">メンバー</a></li>
-            <li><a href="contact.html">連絡先</a></li>
             <li><a href="lab-member-page.html">内部ページ</a></li>
+            <li><a href="contact.html">連絡先</a></li>
         </ul>
     </div>
 
     <!--メインコンテンツ部分-->
     <div class="all-contents">
 
+        <div class="left-column">
+            <div class="content">
+
+                <h2>もくじ</h2>
+                <ul>
+                    <li><a href="#book">著書・編著</a></li>
+                    <li><a href="#journal">論文誌</a></li>
+                    <li><a href="#ic">国際会議</a></li>
+                    <li><a href="#dc">国内会議</a></li>
+                    <li><a href="#patents">特許</a></li>
+                    <li><a href="#thesis">学位論文</a></li>
+                    <li><a href="#visiting">来歴</a></li>
+                </ul>
+                
+            </div>
+        </div>
+
+        
+        <div class="right-column" >
+            <div class="content publication">
+
+                <h2 id="book">著書・編著</h2>
+                <ul>
+                    <li>王彧，加藤ジェーン，「行動認識のためのTwo-stream 3D BagNet～解釈できる行動認識を目指して～」，画像ラボ，日本工業出版，2020.</li>
+                    <li>加藤ジェーン，王彧，小久保嘉人，「深層学習アプローチに基づいた歩行者の詳細認識」，画像ラボ，日本工業出版，Vol.29, No.2, pp.15-24, 2018.2.</li>
+                    <li>小久保嘉人，王彧，加藤ジェーン，「単眼カメラ映像からの路面位置推定手法の開発」，車載センシング技術の開発と，自動運転システムへの応用，第7節 , pp.228-234, （株）技術情報協会，2017.</li>
+                </ul>
+
+                <h2 id="journal">論文誌</h2>
+                <ul>
+                    <li>"A Multi-task Attention Strengthening Model for Fine-grained Image Classification Pattern Recognition" <font color="red">under review.</font></li>
+                    <li>Ji Ying, Yu Wang, and Jien Kato"Predicting Violence Rating based on Pairwise Comparison", IEICE Trans. on Information and Systems, <font color="red">accepted.</font></li>
+                    <li>Lonfjiao Zhao, Yu Wang, and Jien Kato, "Rethinking the Roration Invariance of Local Convolutional Features for Content-based Image Retrieval Data of Evaluation", IEICE Trans. on Information and Systems, <font color="red">accepted.</font></li>
+                    <li>Ke Tian, Mayu Urata, Mamoru Endo, Katsuhiro Mouri, Takami Yasuda and Jien Kato, "Real-World Oriented Smartphone AR Supported Learning System Based on Planetarium Contents for Seasonal Constellation Observation", Applied Sciences, 2019.</li>
+                    <li>Dichao Liu, Yu Wang, and Jien Kato, "Attention-Guided Spatial Transformer Networks for Fine-grained Visual Recognition", IEICE Trans. on Information and Systems, Vol.E102-D, No.12, pp.2577-2586, 2019.</li>
+                    <li>Yuan Cao, Heng Qi, Jien Kato and Keqiu Li, "Hash Ranking with Weighted Asymmetric Distance for Image Search", IEEE Transactions on Computational Imaging, Vol.3, No.4, pp.1008-1019, 2017. </li>
+                    <li>加藤ジェーン，張冠文，王彧，「フィルター・パラメータの重要度に着目した小規模タスクのためのCNN初期化手法」，人工知能学会論文誌，Vol.32, No.3, pp.1-11, 2017.3. <a href="http://www.mv.ss.is.nagoya-u.ac.jp/~jien/publications/paper_pdf_2016fy/32_C-G42.pdf"><em class="material-icons">picture_as_pdf</em></a></li>
+                    <li>小久保嘉人，王彧，張冠文，加藤ジェーン，間瀬健二，「歩行者の詳細認識精度を向上させるための追加型手法」，電子情報通信学会論文誌，Vol.J100-D, No.2, pp.265-276, Feb. 2017. <a href="http://www.mv.ss.is.nagoya-u.ac.jp/~jien/publications/paper_pdf_2016fy/ieice2017_kokubo.pdf"><em class="material-icons">picture_as_pdf</em></a></li>
+                    <li>Yu Wang and Jien Kato, "Efficient Local Feature Encoding for Human Action Recognition with Approximate Sparse Coding", IEICE Transaction on Information and Systems, Vol.E99-D, No.4, pp.1212-1220, 2016. <a href="http://www.mv.ss.is.nagoya-u.ac.jp/~jien/publications/paper_pdf_2016fy/ieice2016-ywang.pdf"><em class="material-icons">picture_as_pdf</em></a></li>
+                    <li>Guanwen Zhang, Jien Kato, Yu Wang and Kenji Mase, "Multiple-shot People Re-identification by Patch-wise Learning", IEICE Transaction on Information and Systems, Vol.E98-D, No.12, pp.2257-2270, DOI:10.1587/transinf.2014EDP7427, 2015. </li>
+                    <li>鈴木嵩史, ワンユ, 加藤ジェーン, 間瀬健二，「クロスデータセットにおける行動識別器の学習アルゴリズム」，電気学会論文誌C, Vol.135, No.12, pp.1574-1582, DOI:10.1541/ieejeiss.135.1574, 2015. </li>
+                    <li>Guanwen Zhang, Jien Kato, Yu Wang and Kenji Mase, "A Novel Approach for Annotation-based Image Retrieval Using Deep Architecture",Journal of Multiple-Valued Logic and Soft Computing (in press). <font color="red">Best Paper Award</font> </li>
+                    <li>Guanwen Zhang, Jien Kato, Yu Wang and Kenji Mase, "Adaptive Metric Learning for People Re-identification", IEICE Transaction on Information and Systems, Vol.E97-D, No.11, pp.2888-2920, 2014.</li>
+                    <li>Guanwen Zhang, Jien Kato, Yu Wang and Kenji Mase, "People Re-identification with Local Distance Comparison using Learned Metric", IEICE Transaction on Information and Systems, Vol.E97-D, No.9, pp.2461-2472, 2014. </li>
+                    <li>Guanwen Zhang, Jien Kato, Yu Wang and Kenji Mase, "Multi-Stage Deep Convolutional Learning for People Re-identification", International Journal of Computer Systems Science & Engineering, Vol.29, No.4, pp.243-257, 2014. </li>
+                    <li>朝倉淳, 平山高嗣, 丸谷宜史, 加藤ジェーン, 間瀬健二，「多視点映像の視聴履歴を用いた視点遷移予測モデルの検討」，人工知能学会論文誌, Vol.29, No.1, pp.207-212, 2014. </li>
+                    <li>Yu Wang, Jien Kato and Kenji Mase, "Summarizing Nursery School Surveillance Videos by Distance Metric Learning", Journal of Information Processing, Vol.22, No.1, pp.56-66, 2014. </li>
+                    <li>加藤ジェーン，白須遼，王彧，間瀬健二，「多くの画像が共有する『一般クラス』に着目した訓練画像の選択」，情報処理学会論文誌, Vol.55, No.1, pp.542-552, 2014. </li>
+                    <li>Guanwen Zhang, Yu Wang, Jien Kato, Takafumi Marutani and Kenji Mase, "Local Distance Comparison for Multiple-shot People Re-identification", Computer Vision-ACCV 2012, LNCS 7726,  K.M.Lee, Y.Matsushita, J.M.Rehg, Z.Hu (Eds.), pp.677-690, Springer, 2013. </li>
+                </ul>
+
+                <h2 id="ic">国際会議</h2>
+                <ul>
+                    <li>"Attention-based Multi-based Learning for Fine-grained Image Classification", <font color="red">under review</font></li>
+                    <li>Dichao Liu, Yu Wang, Jien Kato, "Attention-Strengthened Feature Learning for Fine-grained Image Recognition", BMVC2020, Sept. 7-10, 2020.</li>
+                    <li>Ying Ji, Yu Wang, and Jien Kato, “Visual Violence Rating with Pairwise Comparison”, Proc. of IEEE 2015 International Conference on Image Processing (ICIP 2019), Taiwan, 2019.09.</li>
+                    <li>Dichao Liu, Yu Wang and Jien Kato, "Supervised Spatial Transformer Networks for Attention Learning in Fine-grained Action Recognition", 14th International Joint Conference on Computer Vision, Imaging and Computer Graphics Theory and Applications, 2019.02.</li> 
+                    <li>Yu Wang and Jien Kato, "Good Choices for Deep Convolutional Feature Encoding", Proc. of IEEE Winter Conference on Applications of Computer Vision (WACV 2019), 2019.01.</li>
+                    <li>Yu Wang and Jien Kato, "Collision Risk Rating of Traffic Scene from Dashboard Cameras", Proc. of International Conference on Digital Image Computing: Techniques and Application (DICDA 2017), Sydney, Australia, pp.519-524, Nov.29-Dec.1, 2017. <a href="http://www.mv.ss.is.nagoya-u.ac.jp/~jien/publications/paper_pdf_2017fy/dicta17_ywang.pdf"><em class="material-icons">picture_as_pdf</em></a></li>
+                    <li>Dichao Liu, Yu Wang and Jien Kato, "Evaluation of Triple-Stream Convolutional Networks for Action Recognition", Proc. of International Conference on Digital Image Computing: Techniques and Application (DICDA 2017), Sydney, Australia, pp.513-518, Nov.29-Dec.1, 2017. <a href="http://www.mv.ss.is.nagoya-u.ac.jp/~jien/publications/paper_pdf_2017fy/dicta17_liudichao.pdf"><em class="material-icons">picture_as_pdf</em></a></li>
+                    <li>Longjiao Zhao, Yu Wang and Jien Kato, "Local Features Augmenting for Better Image Retrieval", Proc. of International Conference on Digital Image Computing: Techniques and Application (DICDA 2017), Sydney, Australia, pp.683-687, Nov.29-Dec.1, 2017.  <a href="http://www.mv.ss.is.nagoya-u.ac.jp/~jien/publications/paper_pdf_2017fy/dicta17_zhaolongjiao.pdf"><em class="material-icons">picture_as_pdf</em></a></li>
+                    <li>Cao Cong, Yu Wang, Jien Kato, Guanwen Zhang and Kenji Mase, "Solving Occlusion Problem in Pedestrian Detection by Construction Discriminative Part Layers", IEEE Winter Conference on Applications of Computer Vision (WACV 2017), Santa Rosa, U.S.A., pp.91-99, March 27-29, 2017. <a href="http://www.mv.ss.is.nagoya-u.ac.jp/~jien/publications/paper_pdf_2016fy/wacv2017-cao.pdf"><em class="material-icons">picture_as_pdf</em></a></li>
+                    <li>Yoshihito Kokubo, Yu Wang, Jien Kato, Guanwen Zhang and Kenji Mase, "Add-on Strategies for Fine-grained Pedestrian Classification", Proc. of International Conference on Digital Image Computing: Techniques and Application (DICDA 2016), Gold Coast, Australia, pp.532-537, Nov.30-Dec.2, 2016. <a href="http://www.mv.ss.is.nagoya-u.ac.jp/~jien/publications/paper_pdf_2016fy/dicta2016_kokubo.pdf"><em class="material-icons">picture_as_pdf</em></a></li>
+                    <li>Kie Tian, Mayu Urata, katsuhiro Mouri, Mamoru Endo, Takami Yasuda and Jien Kato, "Development of a Real-World Oriented Smartphone AR Supported Learning System for Seasonal Constellation Observation", Proc. of The 23rd Internatinal Conference on Computers in Education (ICCE 2015), short paper, pp.390-395, Hangzhou, China, Nov.30-Dec.4, 2015. </li>
+                    <li>Guanwen Zhang, Jien Kato, Yu Wang and Kenji Mase, "How to Initialize the CNN for Small Datasets: Extracting Discriminative Filters from Pre-trained Model", Proc. of The 3rd IAPR Asian Conference on Pattern Recognition (ACPR'2015), PS2-34, Kuala Lumpur, Malaysia, Nov.3-6, 2015. </li>
+                    <li>Yu Wang and Jien Kato, "Video-level Violence Rating with Rank Prediction", Proc. of The 3rd IAPR Asian Conference on Pattern Recognition (ACPR'2015), PS1-04, Kuala Lumpur, Malaysia, Nov.3-6, 2015. </li>
+                    <li>Yu Wang and Jien Kato, "Action Recognition with Approximate Sparse Coding", Proc. of IEEE International Conference on Image Processing (ICIP'2015), ARS-P1.1, Quebec City, Canada, Sept.27-30, 2015. <font color="red">Best 10% Paper Award</font> </li>
+                    <li>Guanwen Zhang, Jien Kato, Yu Wang, Kenji Mase. "A Novel Approach for Annotation-based Image Retrieval using Deep Architecture", Proc. of the 9th International Conference on Frontier of Computer Science & Technology (FCST2015), Dalian, China, Aug.26-29, 2015. <font color="red">Best Paper Award</font> </li>
+                    <li>Guanwen Zhang, Jien Kato, Yu Wang and Kenji Mase, "People Re-identification Using Two-Stage Transfer Metic Learning", Proc. of IAPR International Conference on Machine Vision Applications (MVA'15), Tokyo, Japan, May 18-22, 2015. </li>
+                    <li>Wang Yu and Jien Kato, "Action Recognition with Shot Boundary Detection and Decoded iDT Features", ECCV2014 Workshop on THUMOS Challenge: Action Recognition with a Large Number of Classes, Zurich, Swiss, Sept. 6-12, 2014. </li>
+                    <li>Guanwen Zhang, Jien Kato, Yu Wang, Kenji Mase, "People Re-identification Using Deep Convolutional Neural Network", Proc. of The 9th International Conference on Computer Vision Theory and Applications (VISAPP'14), pp.216-223, Lisbon, Portugal, Jan.5-8, 2014. </li>
+                    <li>Takeyuki Suzuki, Jien Kato, Yu Wang and Kenji Mase, "Domain Adaptive Action Recognition with Integrated Feature Selection and Self-training", Proceedings of the 2nd IAPR Asian Conference on Pattern Recognition (ACPR'13), Oral, Okinawa, Japan, Nov. 5-8, 2013. </li>
+                    <li>Guanwen Zhang, Jien Kato, Yu Wang and Kenji Mase, "Adaptive Metric Learning in Local Distance Comparison for People Re-identification", Proceedings of the 2nd IAPR Asian Conference on Pattern Recognition (ACPR'13), Okinawa, Japan, Nov.11.5-8, 2013. </li>
+                    <li>Ryo Shirasu, Jien Kato, Yu Wang and Kenji Mase, "Common Class Information based Efficient Training Data Selection for Photo Categorization", Proceedings of 13th IAPR Conference on Machine Vision Applications (MVA'13), pp.194-197, Poster, Kyoto, May, 20-23, 2013. </li>
+                </ul>
+
+                <h2 id="dc">国内会議</h2>
+                <ul>
+                    <li>Dichao Liu, Yu Wang Kenji Mase and Jien Kato, "Multi-Task Attention Learning for Fine-grained Recognition", 電子情報通信学会技術報告(PRMU), *(*), 2020.12.</li>
+                    <li>Longjiao Zhao, Yu Wang, Yoshiharu Ishikawa and Jien Kato, "Rethinking the local similarity in content-based image retrieval", 電子情報通信学会技術報告(PRMU), *(*), 2020.12.</li>
+                    <li>内田準也，王彧，加藤ジェーン，「Two-stream 3D BagNetによる人物行動認識」，電子情報通信学会技術報告(PRMU), *(*), 名古屋工業大学, 2020.5.</li>
+                    <li>杉山瑠菜，王彧，加藤ジェーン，「社会関係を活用した映像会話シーンにおける雰囲気の推定」，電子情報通信学会技術報告(PRMU), *(*), 名古屋工業大学, 2020.5.</li>
+                    <li>小平美紗季，ワンユ，加藤ジェーン，「広域・狭域ネットワークを用いた歩行者検出」，電子情報通信学会技術報告(PRMU), *(*), 京都大学, 2020.3.</li>
+                    <li>Qianyuan Liu, Yu Wang and Jien Kato, "Continuous Variables Estimation through Classification Networks Ensembles", 電子情報通信学会技術報告(PRMU), *(*), 京都大学, 2020.3.</li>
+                    <li>宮島正樹，趙隆姣，田中士郎，田中弘美，王彧，加藤ジェーン，「織物の摩擦感推定のための視触覚情報の相関解析」，質感のつどい　第5回公開フォーラム，京都大学，2019.12.4.</li>
+                    <li>小平美沙季，王彧，加藤ジェーン，「マルチレベルのパーツマイニングを用いた歩行者検出」, 電子情報通信学会技術報告(PRMU), **(**), pp.-, 青山学院大学，2018.3.18.</li>
+                    <li>Longjiao Zhao, Yu Wang and Jien Kato, "Image Retrieval with Augmented Fine-tuned CNN Features", 電子情報通信学会技術報告(PRMU), **(**), pp.-, 青山学院大学，2018.3.18.</li>
+                    <li>Ruisheng Qin, Yu Wang and Jien Kato, "BOJ253: A Large-scale Dataset for Butterfly Recognition", 電子情報通信学会技術報告(PRMU), 117(362), pp.19-24, 慶応大学，2017.12.16.</li>
+                    <li>三井弘希，ワンユ，加藤ジェーン, 「車載カメラ及びLidarを用いた多操作状況の推定」, 電子情報通信学会技術報告(PRMU), 117(362), pp.59-63, 慶応大学，2017.12.16.</li>
+                    <li>Dichao Liu, Yu Wang and Jien Kato, "Hierarchical Multi-stream STNs for Fine-grained Action Recognition", 電子情報通信学会技術報告(PRMU), 117(362), pp.13-17, 慶応大学，2017.12.16.</li>
+                    <li>Dichao Liu, Yu Wang and Jien Kato,"Spatial Attention Selection for Fine-grained Action Recognition", 電気関係学会東海支部連合大会講演論文集, 名古屋大学，G4-3, 2017.9.8. <a href="http://www.mv.ss.is.nagoya-u.ac.jp/~jien/publications/paper_pdf_2017fy/G4-3.pdf"><em class="material-icons">picture_as_pdf</em></a><font color="red">IEEE Nagoya Section Student Paper Award</font></li>
+                    <li>三井弘希，加藤ジェーン，王彧,"車載カメラ映像を用いた煩雑状況の推定", 電気関係学会東海支部連合大会講演論文集, 名古屋大学，G4-3, 2017.9.8. <a href="http://www.mv.ss.is.nagoya-u.ac.jp/~jien/publications/paper_pdf_2017fy/G3-7.pdf"><em class="material-icons">picture_as_pdf</em></a></li>
+                    <li>小久保嘉人，王彧，加藤ジェーン，間瀬健二，「部分と全体を注目したCNNの融合による歩行者の属性の詳細認識」，電子情報通信学会技術報告(PRMU), 116(461), pp.87-90, 北海道大学, 2017.2.18.<a href="http://www.mv.ss.is.nagoya-u.ac.jp/~jien/publications/paper_pdf_2016fy/prmu201702-kokubo.pdf"><em class="material-icons">picture_as_pdf</em></a></li>
+                    <li>Cong Cao, Yu Wang, Jien Kato and Kenji Mase, "Part-aware CNN for Pedestrian Detection", 電子情報通信学会技術報告(PRMU), 116(461), pp.87-90, Hokkaido University, 2017.2.18.<a href="http://www.mv.ss.is.nagoya-u.ac.jp/~jien/publications/paper_pdf_2016fy/prmu201702-cao.pdf"><em class="material-icons">picture_as_pdf</em></a></li>
+                    <li>Dichao Liu, Yu Wang, Jien Kato and Kenji Mase, "Evaluation of Triple-stream Convolutional Network for Action Recognition", 電子情報通信学会技術報告(PRMU), 116(461), pp.91-94, Hokkaido University, 2017.2.18. </li>
+                    <li>Longjiao Zhao, Yu Wang, Jien Kato and Kenji Mase, "More Convolution Filters for Beter Image Retrieval", 電子情報通信学会技術報告(PRMU), 116(461), Hokkaido University, pp.211-212, 2017.2.18.</li>
+                    <li>Yingying Di, Yu Wang, Jien Kato and Kenji Mase, "A Dataset of Dashboard Camera Videos for Driving Danger Detection", 情報処理学会第79回全国大会，pp.2-447-2-448, Nagoya University, 2017.3.16-18. <a href="http://www.mv.ss.is.nagoya-u.ac.jp/~jien/publications/paper_pdf_2016fy/%E6%83%85%E5%87%A6%E5%85%A8%E5%9B%BD%E5%A4%A7%E4%BC%9A-diyingying.pdf"><em class="material-icons">picture_as_pdf</em></a></li>
+                    <li>三井弘希，王彧，加藤ジェーン，間瀬健二，「車載センサと歩行者の属性による歩行者の行動予測」，情報処理学会第79回全国大会，pp.3-251-3-252, 名古屋大学, 2017.3.16-18. <a href="http://www.mv.ss.is.nagoya-u.ac.jp/~jien/publications/paper_pdf_2016fy/%E6%83%85%E5%87%A6%E5%85%A8%E5%9B%BD%E5%A4%A7%E4%BC%9A-mitui.pdf"><em class="material-icons">picture_as_pdf</em></a></li>
+                    <li>北垣修，王彧，加藤ジェーン，間瀬健二，「車載カメラ映像における危険の検知」，情報処理学会第79回全国大会，pp.2-455-2-456, 名古屋大学, 2017.3.16-18. <a href="http://www.mv.ss.is.nagoya-u.ac.jp/~jien/publications/paper_pdf_2016fy/%E6%83%85%E5%87%A6%E5%85%A8%E5%9B%BD%E5%A4%A7%E4%BC%9A%E3%83%BCkitagaki.pdf"><em class="material-icons">picture_as_pdf</em></a></li>
+                    <li>Cong Cao, Guanwen Zhang, Yu Wang, Jien Kato, Kenji Mase, "Pedestrian Detection using Mid-level Body Parts", 電子情報通信学会技術研究報告(PRMU), 116(39), pp.91-94, Nagoya University, 2016.5.19.<font color="red">Monthly Best Presentation Award</font> </li>
+                    <li>小久保嘉人, ワンユ, 加藤ジェーン, 間瀬健二，「統計情報を用いた歩行者の精細分類」，電子情報通信学会パターン認識・メディア理解研究会(PRMU), 大阪大学, pp.169-173, 2016.1.22.</li>
+                    <li>内藤貴, 王彧, 加藤ジェーン, 間瀬健二,「時空間上暴力シーンラベリングツールの提案」, 平成27年度電気関係学会東海連合大会, 名古屋工業大学, M4-7, 2015.9.29.</li>
+                    <li>Cong Cao, Guanwen Zhang, Yu Wang, Jien Kato, "Evaluation of CNN Features in Poselets Classification", 平成27年度電気関係学会東海連合大会論文集, M2-2, 名古屋工業大学, 2015.9.28.</li>
+                    <li>小野瀬良祐, 王彧, 加藤ジェーン, 間瀬健二,「チョウの種類を特定する物体認識手法の検討」, 平成27年度電気関係学会東海連合大会, M2-1, 名古屋工業大学, 2015.9.28.</li>
+                    <li>小久保嘉人, ワンユ, 加藤ジェーン, 間瀬健二，「サーフェスレイアウトを用いた単眼カメラ映像からの路面位置推定」，電子情報通信学会パターン認識・メディア理解研究会(PRMU)，pp.19-22, 2015.5.</li>
+                    <li>加藤ジェーン, 王彧,「ビデオコンテンツにおける暴力度の自動レーティング」, 電子情報通信学会技術研究報告(PRMU), 慶応大学, pp.235-238, 2015.3.19-20.</li>
+                    <li>鈴木嵩史，王彧，加藤ジェーン，間瀬健二，「クロスデータセットに対するセルフトレーニングでのデータ選択手法の提案」，電子情報通信学会技術研究報告(PRMU)，九州大学，pp.85-89, 2014.12.11-12.</li>
+                    <li>内藤貴, 加藤ジェーン, 王彧, 間瀬健二,「時空間特徴を用いたYouTube上のビデオ内の暴力シーン検出」, 第3回情報科学技術フォーラム(FIT2014)，筑波大学, pp.185-188, 2014.9.3-5.</li>
+                    <li>Guanwen Zhang, Jien Kato, Yu Wang, Kenji Mase, "People Re-identification with Auxiliary Knowledge", 電子情報通信学会パターン認識・メディア理解研究会(PRMU), pp.251-255, 2014.1.</li>
+                    <li>Yu Wang, Jien Kato and Kenji Mase, "Action Recognition with Bundled Pose Representation",第16回画像認識・理解シンポジウム（MIRU2013）論文集, SS2-4, 国立情報学研究所, ポスター, 査読有, 2013.7.29-8.1.</li>
+                    <li>Takeyuki Suzuki, Jien Kato, Yu Wang and Kenji Mase, "Domain Adaptive Action Recognition with Integrated Feature Selection and Self-training", 第16回画像認識・理解シンポジウム（MIRU2013）論文集, SS3-6, 国立情報学研究所, ポスター, 査読有,</li>
+                    <li>朝倉淳, 平山高嗣, 丸谷宜史, 加藤ジェーン, 間瀬健二, 「多視点映像の試聴履歴を用いた視点遷移予測モデルの検討」, 2G1-1, 第27回人工知能学会全国大会, 富山国際会議場, 2013.6.4-7.</li>
+                </ul>
+
+                <h2 id="patents">特許</h2>
+                <ul>
+                    <li>若林保孝，田中誠一，加藤ジェーン，王彧，「映像表示装置，視聴制御装置及び視聴制御プログラム」，出願番号：2014-192741，出願日：2014.9.22.</li>
+                    <li>田中誠一，若林保孝，加藤ジェーン，王彧，「映像表示装置，視聴制御装置」， 出願番号:2014-192742，出願日:2014.9.22.</li>
+                    <li>加藤ジェーン，王彧，「ビデオコンテンツ暴力度評価装置，ビデオコンテンツ暴力度評価方法およびビデオコンテンツ暴力度評価プログラム」，特願:2014-022845.</li>
+                </ul>
+
+                <h2 id="thesis">学位論文</h2>
+                <ul class="box_blue adjust">
+                    <li>小平美沙季，「深層ローカル特徴を活用した歩行者検出」，Master, 2020, 2.</li>
+                    <li>Qianyuan Liu, "Continuous Variables Estimation Through Classification Networks Ensembles", Master, 2020, 2.</li>
+                    <li>安藤菜名，「音と画像を用いた暴力シーンの検出」，Graduation, 2020. 1.</li>
+                    <li>福田諒，「二輪車車載カメラからの自転車検出」，Graduation, 2020. 1.</li>
+                    <li>宮島正樹，「織物の摩擦感推定のための視触覚情報の相関解析」，Graduation, 2020. 1.</li>
+                    <li>中村大成，「ニュース映像による要約データセットの作成と要約手法による要約結果での精度比較」，Graduation, 2020. 1.</li>
+                    <li>小野史織，「チョウの詳細認識におけるパッチ画像を活用した手法の検証」，Graduation, 2020. 1.</li>
+                    <li>Yuqiao Shi, 「階層構造を用いた逐次的認識アプローチの有効性の検証」，Graduation, 2020. 1.</li>
+                    <li>杉山瑠菜，「社会関係を活用した映像会話シーンにおける親密度の推定」，Graduation, 2020. 1.</li>
+                    <li>内田準也，「3D CNNによる局所時空間特徴を用いた行動認識における認識根拠の分析」，Graduation, 2020. 1.</li>
+                    <li>鷲尾祐佳，「Siamese Two-streamネットワークによる手話動画比較」，Graduation, 2020. 1.</li>
+                    <li>Ying Ji, "Visual Violence Rating with Pairwise Comparision", Master, 2019.2.</li>
+                    <li>北垣修, 「Two-Stream CNNを用いた未来フレーム予測による異常検出」, Master, 2019.2.</li>
+                    <li>Ruisheng Qin, "Fine-grained Butterfly Recognition with Auxiliary Annotations", Master, 2019.2.</li>
+                    <li>Dichao Liu, "Fine-grained Action Recognition based on Multi-scale Attention Learning," Master thesis, 2018.1.26.</li>
+                    <li>Longjiao Zhao, "Study on Deep Convoluational Features in Image Retrieval," Master thesis, 2018.1.26.</li>
+                    <li>三井弘希,「車載カメラ及びLidarを用いた運転操作推定」, Master thesis, 2018.1.26.</li>
+                    <li>Yingying Di, "Driving Danger Attribute Analysis Based on Dashboard Camera Videos," Master thesis, 2016.1.26</li>
+                    <li>雨宮祥子, 「CNNを用いた第一印象の自動推定」, Undergraduate thesis, 2017.2.</li>
+                    <li>北垣修, 「車載カメラ映像における事故リスクのレーティング」, Undergraduate thesis, 2017.2.</li>
+                    <li>小久保嘉人, 「歩行者の属性認識における精度向上のための追加型手法に関する研究」, Master thesis, 2017.1.</li>
+                    <li>Cong Cao, “A Part-aware Deep Learning Approach for Handling Occlusion Issues in Pedestrian Detection”, Master thesis, 2017.1.</li>
+                    <li>小野瀬良佑,「チョウの詳細認識のためのデータセットの作成および有用性の考察」，Undergraduate thesis, 2016.2.</li>
+                    <li>内藤貴, 「暴力シーン認識のための主観・客観ラベル付きデータセットの作成」, Master thesis, 2016.1.</li>
+                    <li>鈴木嵩史，「クロスデータセットにおける行動認識器の学習アルゴリズム」，Master thesis, 2015.1.</li>
+                    <li>小久保嘉人，「サーフェスレイアウトを用いた単眼カメラ映像からの路面位置推定」，Undergraduate thesis, 2015.2.</li>
+                    <li>Guanwen Zhang, "A Study of Real-word People Re-identification", PhD thesis, 2014.9.29.</li>
+                </ul>
+
+                <h2 id="visiting">来歴</h2>
+                <ul>
+                    <li>2019.8.1-2, 中国科学院微電子研究所Prof.Ying Liu来訪</li>
+                    <li>2019.5-2019.7, インド・シンビオシス国際大学の特別研究学生Devanshi Sukhijaさん受入</li>
+                    <li>2017.11.28, 中国科学技術大学学生による，「情報技術で優しい人間社会の実現を目指す先端的な研究の視察」，さくらサイエンスプラン招へい事業．</li>
+                    <li>2017.1.18-20, Prof. Keqiu Li of Tanjin Unversity, China.</li>
+                    <li>2016.26, 青海師範大学チベット語情報処理教育部重点実験室験収</li>
+                    <li>2016.22-30, 教育部春晖計画，西華大学（成都），青海師範大学（西寧）を訪問</li>
+                    <li>2016.10.1-2017.9.30, Heng Qi (Dalian University of Technology), JSPS Postdoctoral Fellowship</li>
+                    <li>2015.11.13-14, Prof. Keqiu Li of Tanjin Unversity, China.</li>
+                </ul>
+
+            </div>
+        </div>
 
     </div>
 

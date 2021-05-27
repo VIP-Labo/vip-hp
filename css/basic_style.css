@@ -14,6 +14,7 @@ html {
     --content-border-color: #ddd;
 
     --vip-color: rgb(174, 0, 0); 
+    --calendar-tag-color: #a3a3a3;
 }
   
 body {
@@ -21,7 +22,6 @@ body {
     color: var(--main-text-color);
 
     font-family: Arial, Helvetica, sans-serif;
-    font-size: small;
     line-height: 1.7;
     margin: 0;
 }
@@ -107,7 +107,7 @@ header {
     
     display: inline-flex;
 
-    font-size: 14px;
+    font-size: small;
 
     border-right: 1px solid #666;
     border-left: 1px solid #333;
@@ -133,8 +133,8 @@ header {
 /* ↓↓↓ content内 のスタイル ↓↓↓ */
 
 .all-contents {
-    max-width: 1100px;
-    margin: 30px auto;
+    max-width: 1280px;
+    margin: 0px auto;
     flex-wrap: wrap;
     display: flex;
     display: -webkit-flex;
@@ -146,17 +146,19 @@ header {
     top: 0;
     margin: 0 auto;
     width: 80%;
+
+    padding: 10px 0;
 }
 
 .left-column {
     position: sticky;
     position: -webkit-sticky;
     top: 0;
-    width: 30%;
+    width: 25%;
 }
 
 .right-column {
-    width: 70%;
+    width: 75%;
 }
 
 .center-column {
@@ -170,11 +172,84 @@ header {
     border-color: var(--vip-color);
 }
 
+.content h3 {
+    padding-bottom: .2em;
+    border-bottom: 1px solid;
+    border-color: var(--content-border-color);
+}
+
+.calendar-font {
+    color: var(--calendar-tag-color);
+    font-size: small;
+}
+
+/* research.html, research/内で使用しているスタイル */
+
+.research-link {
+    color: var(--main-text-color);
+    text-decoration: none;
+}
+
+.research-box {
+    width: 300px;
+    height: 150px;
+    margin: 20px 20px;
+    box-shadow: 1px 1px 6px rgb(50 50 50 / 35%);
+    margin-bottom: 10px;
+
+    -webkit-transition: box-shadow .2s linear;
+    transition: box-shadow .2s linear;
+    
+    display: inline-flex;
+    vertical-align: top;
+}
+
+.research-box:hover {
+    box-shadow:  4px 10px 10px rgb(50 50 50 / 25%);
+}
+
+.research-box .left-img {
+    width: 40%;
+    height: 100%;
+}
+
+.left-img img {
+    width: 100%;
+    height: 100%;
+}
+
+.research-box .right-caption {
+    padding: 0.3rem;
+    width: 60%;
+    height: 100%;
+}
+
+.right-caption h2 {
+    text-align: center;
+    padding: 0px;
+    margin: 0px;
+}
+
+.right-caption p {
+    text-align: center;
+    margin: 5px 0px 0px 0px;
+}
+
+.study-img {
+    text-align: center;
+}
+
+.study-img img {
+    width: 90%;
+}
+
+.return {
+    text-align: end;
+}
+
 /* contact.htmlで使用しているスタイル */
 
 .contact-parent {
-    overflow-x:auto;
-    overflow-y:hidden;
     width:100%;
 }
 
@@ -196,31 +271,194 @@ header {
     padding: 10px 10px 10px 10px;
 }
 
+/* publication.html 内のスタイル */
+
+.publication ul li{
+    font-size: smaller;
+}
+
+.publication em{
+    font-size: medium;
+    color: var(--calendar-tag-color);
+}
+
 /* member.html 内のスタイル */
 
-.member {
-    width: 230px;
+.prof {
+    width: 90%;
     margin: 0 10px;
     box-shadow: 1px 1px 6px rgb(50 50 50 / 35%);
-    padding: 0.9rem;
+    padding: 0.4rem 0.9rem;
     margin-bottom: 10px;
+
     display: inline-block;
+    text-align: start;
+}
+
+.prof .name {
+    margin: 0 0 0 0;
+    font-size: medium;
+}
+
+.prof .name-eng {
+    margin: -5px 0 0 0;
+    font-size: 12px;
+    color: var(--eng-color);
+}
+
+.prof .prof-info-block {
+    display: inline-block;
+}
+
+.prof .member-btn-block {
+    float: right;
+    display: inline-block;
+    height: 32px;
+}
+
+.member {
+    width: 200px;
+    margin: 0 10px;
+    box-shadow: 1px 1px 6px rgb(50 50 50 / 35%);
+    padding: 0.5rem 0.5rem;
+    margin-bottom: 10px;
+
+    display: inline-block;
+    text-align: start;
 }
 
 .member .name {
     margin: 0 0 0 0;
-    font-size: large;
+    font-size: medium;
 }
 
 .member .name-eng {
     margin: -5px 0 0 0;
-    font-size: 16px;
+    font-size: 12px;
     color: var(--eng-color);
+}
+
+.member .member-img {
+    margin-right: 10px;
+    display: inline-block;
+    position: relative;
+    top: 5px; 
+}
+
+.member .member-img img {
+    width: 60px;
+    height: 60px;
+    object-fit: cover;
+    border-radius: 50%;
+}
+
+.member .member-info-block {
+    position: relative;
+    top: -8px;
+    display: inline-block;
+}
+
+.btn {
+    margin: 8px 0; 
+    cursor: pointer;
+    padding: 8px;
+    color:#ffffff;
+    background-color: var(--vip-color);
+    border: none;
+    border-radius: 4px;
+
+    text-transform: uppercase; /* 大文字 */
+
+    -webkit-box-shadow: 0 2px 2px 0 rgb(0 0 0 / 14%), 0 3px 1px -2px rgb(0 0 0 / 12%), 0 1px 5px 0 rgb(0 0 0 / 20%);
+    box-shadow: 0 2px 2px 0 rgb(0 0 0 / 14%), 0 3px 1px -2px rgb(0 0 0 / 12%), 0 1px 5px 0 rgb(0 0 0 / 20%);
+
+    -webkit-transition: box-shadow .2s linear;
+    transition: box-shadow .2s linear;
+}
+
+.btn:hover {
+    -webkit-box-shadow: 0 6px 6px 0 rgb(0 0 0 / 14%), 0 6px 1px -6px rgb(0 0 0 / 12%), 0 1px 10px 0 rgb(0 0 0 / 20%);
+    box-shadow: 0 6px 6px 0 rgb(0 0 0 / 14%), 0 6px 1px -6px rgb(0 0 0 / 12%), 0 1px 10px 0 rgb(0 0 0 / 20%);
+}
+
+/* More ボタンで表示を増やす */
+
+.content-wrap {
+    overflow: hidden;
+    position: relative;
+    margin: 0;
+    font-size: smaller;
+}
+.content-wrap h4 {
+    margin-bottom: 5px;
+    font-size: medium;
+}
+.content-wrap p {
+    margin-top: 0;
+    padding-left: 10px;
+    display: inline-block;
+}
+.content-wrap img {
+    margin: 0 20px;
+    display: inline-block;
+}
+.close-btn, .more-btn {
+    display: block;
+}
+.invisible {
+    display: none;
+}
+.visible {
+    display: block;
+}
+/* Morボタン ここまで */
+
+.iframe-border {
+    width: 95%;
+    margin: 0 10px;
+    box-shadow: 1px 1px 6px rgb(50 50 50 / 35%);
+    margin-bottom: 10px;
+    display: inline-block;
+    border: none;
+}
+
+/* lab-member-page.htmlで使用しているスタイル */
+
+.cloud {
+    margin: 0 10px;
+    box-shadow: 1px 1px 6px rgb(50 50 50 / 35%);
+    padding: 0.4rem 0.9rem;
+    margin-bottom: 10px;
+    display: inline-block;
+
+    background-image: url(../image/cloud/background.jpg);
+    background-position: center;
+    text-align: center;
+}
+
+.cloud-logo {
+    display: block;
+    margin: 10px auto;
+}
+
+.box-white{
+    background-color: rgba(0, 0, 0, 0.15);
+    color: white;
 }
 
 /* モバイルのための幅指定 */
 
 @media only screen and (max-width: 600px) {
+    .research-box {
+        width: 300px;
+        height: 150px;
+        margin: 20px 0px;
+        box-shadow: 1px 1px 6px rgb(50 50 50 / 35%);
+        margin-bottom: 10px;
+        
+        display: inline-flex;
+        vertical-align: top;
+    }
     
     .left-column {
         display:none;
@@ -228,7 +466,20 @@ header {
 
     .right-column {
         width: 100%;
+        margin: 0 auto;
         text-align: center;
+    }
+
+    .right-column ul{
+        text-align: start;
+    }
+
+    .right-column li{
+        text-align: start;
+    }
+
+    .right-column h3, h4, p {
+        text-align: start;
     }
 }
 

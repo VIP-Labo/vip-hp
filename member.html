@@ -33,6 +33,22 @@
     </script>
     -->
 
+    <!-- jQuery 使用 -->
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+    <script type="text/javascript">
+        $(function() {
+            $('.more-btn').on('click', function() {
+                if( $(this).children().is('.open') ) {
+                    $(this).html('<button class="btn close">Close</button>').addClass('close-btn');
+                    $(this).parent().find('.content-wrap').removeClass('invisible').addClass('visible');
+                } else {
+                    $(this).html('<button class="btn open">More</button>').removeClass('close-btn');
+                    $(this).parent().find('.content-wrap').removeClass('visible').addClass('invisible');
+                }
+            });
+        });
+    </script>
+
 </head>
 
 <body>
@@ -41,7 +57,7 @@
     <header>
         <div class="header-all-contents">
             <div class="header-content">
-                <a href="http://www.ritsumei.ac.jp/" class="rits-image">
+                <a href="http://www.ritsumei.ac.jp/" class="rits-image" target="_blank" rel="noopener noreferrer">
                     <img src="image/rits.svg">
                 </a>
             </div>
@@ -68,8 +84,8 @@
             <li><a href="research.html">研究紹介</a></li>
             <li><a href="publication.html">業績リスト</a></li>
             <li><a href="member.html">メンバー</a></li>
-            <li><a href="contact.html">連絡先</a></li>
             <li><a href="lab-member-page.html">内部ページ</a></li>
+            <li><a href="contact.html">連絡先</a></li>
         </ul>
     </div>
 
@@ -78,64 +94,391 @@
 
         <div class="left-column">
             <div class="content">
-                <h2>Jump To</h2>
-                <li><a href="#prof">教授</a></li>
-                <li><a href="#assistant-prof">助教</a></li>
-                <li><a href="#dr">博士課程</a></li>
-                <li><a href="#ms">修士課程</a></li>
-                <li><a href="#b">学部生</a></li>
+                <h2>もくじ</h2>
+                <ul>
+                    <li><a href="#prof">教授</a></li>
+                    <li><a href="#assistant-prof">助教授</a></li>
+                    <li><a href="#dr">博士課程</a></li>
+                    <li><a href="#ms">修士課程</a></li>
+                    <ul>
+                        <li><a href="#m2">M2</a></li>
+                        <li><a href="#m1">M1</a></li>
+                    </ul>
+                    <li><a href="#b">学部生</a></li>
+                    <ul>
+                        <li><a href="#b4">B4</a></li>
+                    </ul>
+                    <li><a href="#g">卒業生</a></li>
+                </ul>
             </div>
         </div>
 
         <div class="right-column">
             <div class="content">
+
                 <h2 id="prof">教授</h2>
-                    <div class="member">
+                <div class="prof">
+                    <div class="prof-info-block">
                         <p class="name">加藤　ジェーン</p>
                         <p class="name-eng">KATO Jien</p>
                     </div>
 
-                <h2 id="assistant-prof">助教</h2>
-                    <div class="member">
+                    <div class="member-btn-block">
+                        <a href="http://www.ritsumei.ac.jp/~jien/" style="text-decoration: none;" target="_blank" rel="noopener noreferrer">
+                            <button class="btn">More</button>     
+                        </a>
+                    </div>
+                </div>
+
+                <h2 id="assistant-prof">助教授</h2>
+                <div class="prof">
+                    <div class="prof-info-block">
                         <p class="name">王　彧</p>
                         <p class="name-eng">WANG Yu</p>
                     </div>
 
+                    <div class="member-btn-block more-btn">
+                        <button class="btn open">More</button>
+                    </div>
+
+                    <div class="content-wrap invisible">
+                        <h4>学歴</h4>
+                        <p>
+                            2013.03　名古屋大学大学院情報科学研究科 社会システム情報学専攻 博士後期課程　博士（工学）<br>
+                            2010.03　名古屋大学大学院情報科学研究科 社会システム情報学専攻 博士後期課程　修士（情報科学）
+                        </p>
+                        <h4>職歴</h4>
+                        <p>
+                            2017.04-現在　　　名古屋大学大学院国際開発研究科 助教<br>
+                            2016.04-2017.03　名古屋大学大学院情報科学研究科 特任助教<br>
+                            2014.04-2016.03　日本学術振興会(JSPS) 外国人特別研究員<br>
+                            2013.04-2014.03　日本学術振興会(JSPS) 特別研究員PD<br>
+                            2012.04-2013.03　日本学術振興会(JSPS) 特別研究員DC2<br>
+                            2005.12-2007.06　Compal Electronics, Oversea Research Center, R&D Engineer<br>
+                        </p>
+                        <img src="image/profile_img/yu.jpg" width="130" height="140">
+                    </div>
+                </div>
+
                 <h2 id="dr">博士課程</h2>
-                    <div class="member">
+                <div class="member">
+                    <div class="member-img">
+                        <img src="image/profile_img/2021/yinan.jpg">
+                    </div>
+                    
+                    <div class="member-info-block">
                         <p class="name">楊　一楠</p>
                         <p class="name-eng">YANG Yinan</p>
                     </div>
 
-                    <div class="member">
+                </div>
+
+                <div class="member">
+                    <div class="member-img">
+                        <img src="image/profile_img/2018/Zhao.jpg">
+                    </div>
+                    
+                    <div class="member-info-block">
                         <p class="name">趙　隆姣</p>
                         <p class="name-eng">ZHAO Longjiao</p>
                     </div>
+                </div>
 
-                    <div class="member">
+                <div class="member">
+                    <div class="member-img">
+                        <img src="image/profile_img/2018/Liu_DC.jpg">
+                    </div>
+
+                    <div class="member-info-block">
                         <p class="name">劉　迪超</p>
                         <p class="name-eng">LIU Dichao</p>
                     </div>
+                </div>
 
-                    <div class="member">
+                <div class="member">
+                    <div class="member-img">
+                        <img src="image/profile_img/2018/ji _ing.jpg">
+                    </div>
+
+                    <div class="member-info-block">
                         <p class="name">吉　頴</p>
                         <p class="name-eng">JI Ying</p>
                     </div>
+                </div>
 
                 <h2 id="ms">修士課程</h2>
-                <h3>M2</h3>
-                    <li>内田　準也</li>
-                    <li>杉山　瑠菜</li>
-                    <li>中村　大成</li>
-                    <li>福田　諒</li>
-                    <li>時　毓喬</li>
+                <h3 id="m2">M2</h3>
+                <div class="member">
+                    <div class="member-img">
+                        <img src="image/profile_img/2018/Jyunya.jpg">
+                    </div>
+
+                    <div class="member-info-block">
+                        <p class="name">内田　準也</p>
+                        <p class="name-eng">UCHIDA Junya</p>
+                    </div>
+                </div>
                 
-                <h3>M1</h3>
-                    <li>岩崎　圭晴</li>
-                    <li>林　慶憲</li>
-                    <li>馬　玉菲</li>
+                <div class="member">
+                    <div class="member-img">
+                        <img src="image/profile_img/2018/runa.jpg">
+                    </div>
+
+                    <div class="member-info-block">
+                        <p class="name">杉山　瑠菜</p>
+                        <p class="name-eng">SUGIYAMA Runa</p>
+                    </div>
+                </div>
+
+                <div class="member">
+                    <div class="member-img">
+                        <img src="image/profile_img/2018/NakamuraTaisei.jpg">
+                    </div>
+
+                    <div class="member-info-block">
+                        <p class="name">中村　大成</p>
+                        <p class="name-eng">NAKAMURA Taisei</p>
+                    </div>
+                </div>
+
+                <div class="member">
+                    <div class="member-img">
+                        <img src="image/profile_img/2018/fukuda.jpg">
+                    </div>
+
+                    <div class="member-info-block">
+                        <p class="name">福田　諒</p>
+                        <p class="name-eng">FUKUDA Ryo</p>
+                    </div>
+                </div>
+
+                <div class="member">
+                    <div class="member-img">
+                        <img src="image/profile_img/2018/shi.jpg">
+                    </div>
+
+                    <div class="member-info-block">
+                        <p class="name">時　毓喬</p>
+                        <p class="name-eng">SHI Yuqiao</p>
+                    </div>
+                </div>
+                
+                <h3 id="m1">M1</h3>
+                <div class="member">
+                    <div class="member-img">
+                        <img src="image/profile_img/2020/LUO_Fanxing.png">
+                    </div>
+
+                    <div class="member-info-block">
+                        <p class="name">羅　凡星</p>
+                        <p class="name-eng">LUO Fanxing</p>
+                    </div>
+                </div>
+
+                <div class="member">
+                    <div class="member-img">
+                        <img src="image/profile_img/2019/yoshiharu_iwasaki.jpg">
+                    </div>
+
+                    <div class="member-info-block">
+                        <p class="name">岩崎　圭晴</p>
+                        <p class="name-eng">IWASAKI Yoshiharu</p>
+                    </div>
+                </div>
+
+                <div class="member">
+                    <div class="member-img">
+                        <img src="image/profile_img/2019/yoshinori_hayashi.JPG">
+                    </div>
+
+                    <div class="member-info-block">
+                        <p class="name">林　慶憲</p>
+                        <p class="name-eng">HAYASHI Yoshinori</p>
+                    </div>
+                </div>
+
+                <div class="member">
+                    <div class="member-img">
+                        <img src="image/profile_img/2019/MA_Yufei.png">
+                    </div>
+
+                    <div class="member-info-block">
+                        <p class="name">馬　玉菲</p>
+                        <p class="name-eng">MA Yufei</p>
+                    </div>
+                </div>
 
                 <h2 id="b">学部生</h2>
+                <h3 id="b4">B4</h3>
+                <div class="member">
+                    <div class="member-img">
+                        <img src="image/profile_img/2019/okamoto_koshiro.png">
+                    </div>
+
+                    <div class="member-info-block">
+                        <p class="name">岡本　幸志郎</p>
+                        <p class="name-eng">OKAMOTO Koshiro</p>
+                    </div>
+                </div>
+
+                <div class="member">
+                    <div class="member-img">
+                        <img src="image/profile_img/2019/hiroki_yoshioka.jpg">
+                    </div>
+
+                    <div class="member-info-block">
+                        <p class="name">吉岡　宏樹</p>
+                        <p class="name-eng">YOSHIOKA Hiroki</p>
+                    </div>
+                </div>
+
+                <div class="member">
+                    <div class="member-img">
+                        <img src="image/profile_img/2019/YU_JINHONG.png">
+                    </div>
+
+                    <div class="member-info-block">
+                        <p class="name">余　金宏</p>
+                        <p class="name-eng">YU Jinhong</p>
+                    </div>
+                </div>
+
+                <div class="member">
+                    <div class="member-img">
+                        <img src="image/profile_img/2020/Tsukushi.JPG">
+                    </div>
+
+                    <div class="member-info-block">
+                        <p class="name">青草　月子</p>
+                        <p class="name-eng">AOKUSA Tsukushi</p>
+                    </div>
+                </div>
+
+                <div class="member">
+                    <div class="member-img">
+                        <img src="image/profile_img/2020/Koshiro.jpg">
+                    </div>
+
+                    <div class="member-info-block">
+                        <p class="name">浦隅　好志郎</p>
+                        <p class="name-eng">Urasumi Koshiro</p>
+                    </div>
+                </div>
+
+                <div class="member">
+                    <div class="member-img">
+                        <img src="image/profile_img/2020/Masaki.JPG">
+                    </div>
+
+                    <div class="member-info-block">
+                        <p class="name">奥田　雅生</p>
+                        <p class="name-eng">OKUDA Masaki</p>
+                    </div>
+                </div>
+
+                <div class="member">
+                    <div class="member-img">
+                        <img src="image/profile_img/2020/Eichi.JPG">
+                    </div>
+
+                    <div class="member-info-block">
+                        <p class="name">後藤　栄智</p>
+                        <p class="name-eng">GOTO Eichi</p>
+                    </div>
+                </div>
+
+                <div class="member">
+                    <div class="member-img">
+                        <img src="image/profile_img/2020/Yuya.jpg">
+                    </div>
+
+                    <div class="member-info-block">
+                        <p class="name">角田　裕哉</p>
+                        <p class="name-eng">TSUNODA Yuya</p>
+                    </div>
+                </div>
+
+                <div class="member">
+                    <div class="member-img">
+                        <img src="image/profile_img/2020/Chihiro.jpg">
+                    </div>
+
+                    <div class="member-info-block">
+                        <p class="name">篠原　千広</p>
+                        <p class="name-eng">SHINOHARA Tihiro</p>
+                    </div>
+                </div>
+
+                <div class="member">
+                    <div class="member-img">
+                        <img src="image/profile_img/2020/Yuri.JPG">
+                    </div>
+
+                    <div class="member-info-block">
+                        <p class="name">長谷川　由莉</p>
+                        <p class="name-eng">HASEGAWA Yuri</p>
+                    </div>
+                </div>
+
+                <div class="member">
+                    <div class="member-img">
+                        <img src="image/profile_img/2020/Hina.jpg">
+                    </div>
+
+                    <div class="member-info-block">
+                        <p class="name">堀畑　日菜</p>
+                        <p class="name-eng">HORIHATA Hina</p>
+                    </div>
+                </div>
+
+                <div class="member">
+                    <div class="member-img">
+                        <img src="image/profile_img/2020/Shouhei.JPG">
+                    </div>
+
+                    <div class="member-info-block">
+                        <p class="name">山内　祥平</p>
+                        <p class="name-eng">YAMAUCHI Shohei</p>
+                    </div>
+                </div>
+
+                <div class="member">
+                    <div class="member-img">
+                        <img src="image/profile_img/2020/Shotaro.jpg">
+                    </div>
+
+                    <div class="member-info-block">
+                        <p class="name">山本　翔太郎</p>
+                        <p class="name-eng">YAMAMOTO Shotaro</p>
+                    </div>
+                </div>
+
+                <div class="member">
+                    <div class="member-img">
+                        <img src="image/profile_img/2020/Shoma.jpg">
+                    </div>
+
+                    <div class="member-info-block">
+                        <p class="name">山脇　翔真</p>
+                        <p class="name-eng">YAMAWAKI Shoma</p>
+                    </div>
+                </div>
+
+                <div class="member">
+                    <div class="member-img">
+                        <img src="image/profile_img/2020/Seki.JPG">
+                    </div>
+
+                    <div class="member-info-block">
+                        <p class="name">毛　世琦</p>
+                        <p class="name-eng">MOU Seki</p>
+                    </div>
+                </div>
+
+                <h2 id="g">卒業生</h2>
+                <iframe src="graduate.html" class="iframe-border" width="100%" height="300px" scrolling="auto">
+                    インラインフレーム対応ブラウザでご覧いただけます。
+                </iframe>
 
             </div>
         </div>
