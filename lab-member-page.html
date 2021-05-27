@@ -33,21 +33,6 @@
     </script>
     -->
 
-    <!-- スライドショー用script -->
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.css">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.min.js"></script>
-
-    <script type="text/javascript">
-            $(document).ready(function(){
-                $('.bxslider').bxSlider({
-                    auto: true,
-                    pause: 4000,
-                    slideWidth: 860,
-                });
-            });
-    </script>
-
 </head>
 
 <body>
@@ -96,16 +81,9 @@
 
                 <h2>もくじ</h2>
                 <ul>
-                    <li><a href="#information">お知らせ</a></li>
-                    <ul>
-                        <li><a href="#info1">B3 研究室配属情報①</a></li>
-                    </ul>
-                    <li><a href="#aboutlab">研究室について</a></li>
+                    <li><a href="#cloud">オンラインストレージ</a></li>
+                    <li><a href="#wiki">研究室 Wiki</a></li>
                 </ul>
-                <h2>ニュース</h2>
-                <iframe class="iframe-border" src="news.html" width="100%" height="300px" scrolling="auto">
-                    インラインフレーム対応ブラウザでご覧いただけます。
-                </iframe>
                 
             </div>
         </div>
@@ -113,33 +91,20 @@
         
         <div class="right-column" >
             <div class="content">
-                <h2 id="information">お知らせ</h2>
-                <h3 id="info1" style="margin-bottom: 0;">B3 研究室配属情報①</h3>
-
-                <div style="text-align: start;">
-                    <span class="calendar-font fas fa-calendar-alt fa-sm" aria-hidden="true"><span style="margin-left: 5px;">2021/05/26</span></span>
+                <h2 id="cloud">オンラインストレージ</h2>
+                <div class="cloud">
+                    <img class="cloud-logo" src="image/cloud/logo.png" alt="cloud log image" width="125" height="72">
+                    <p class="box-white">
+                        　研究室のオンラインストレージです。資料のアップロード・閲覧をする際に、下のボタンをクリックして、オンラインストレージへ移動してください。
+                    </p>
+                    <a href="owncloud"><button class="btn">LOG IN PAGE</button></a>
                 </div>
 
-                <p style="text-align: start;">
-                    　視覚情報処理研究室が位置するクリエーションコア 2Fのマップです。現在、新型コロナウイルスの影響もあり対応人数に制限はありますが、お話を聞いてみたいなど御座いましたらぜひご連絡下さい！
+                <h2 id="wiki">研究室 Wiki</h2>
+                <p>
+                    Coming Soon ...
                 </p>
-                    
-                <div style="text-align: center;">
-                    <img src="image/CC_map.png" width="80%">
-                </div>
 
-                <h2 id="aboutlab">研究室について</h2>
-                <p style="text-align: start;">
-                    　視覚情報処理研究室（VIP）は、立命館大学 情報理工学部 画像・音メディアコース（旧メディア情報学科）に属しています。名古屋大学からいらっしゃった加藤ジェーン先生が立ち上げ、画像・映像認識、ディープラーニングを扱った研究に従事しています。研究内容としては、歩行者検出、運転の推定、映像の暴力度レーティング、行動認識、群衆カウントなど様々なタスクに取り組んでいます。
-                    <br>
-                    <br>
-                    　研究室の雰囲気は、各々が主体的な人が多く和やかです。皆で作り上げていこうという気持ちも強く、留学生の方も多いためグローバルな研究室となっています。
-                </p>
-                <div style="text-align: center;">
-                    <img src="image/slideshow/cool.JPG" width="30%">                    
-                    <img src="image/slideshow/cup.JPG" width="30%">
-                    <img src="image/slideshow/syugou.jpg" width="30%">
-                </div>
             </div>
         </div>
 
