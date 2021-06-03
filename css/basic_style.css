@@ -150,6 +150,16 @@ header {
     padding: 10px 0;
 }
 
+.content table {
+    border-collapse: collapse;
+}
+
+.content th,td {
+    border: solid 2px; /* 枠線指定 */
+    border-color: var(--content-border-color);
+    padding: 10px 10px 10px 10px;
+}
+
 .left-column {
     position: sticky;
     position: -webkit-sticky;
